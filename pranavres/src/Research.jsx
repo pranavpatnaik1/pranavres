@@ -45,7 +45,7 @@ i'll have to think about it some more.
 
 - 206. Reverse Linked List
 
-![RLL Soln](https://media.discordapp.net/attachments/1355385233637249208/1375333668683386880/image.png?ex=68314ecb&is=682ffd4b&hm=659a13964382f06b177bdb666940f2696d0f1bf7d86283d14f0009f6a3c2dbc5&=&format=webp&quality=lossless&width=1035&height=806)
+![RLL Soln](https://postimg.cc/v4W6bMtq)
 
 
       `
