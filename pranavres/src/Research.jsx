@@ -59,6 +59,16 @@ creating a helper function to merge two lists was a good idea. thought of that f
 
 (1:38am) going to go ahead and finish up a script.
 
+![script](https://i.postimg.cc/rmX0VLkk/image.png)
+
+finished a couple of script ideas. got 20 reels locked in.
+
+the series of reimplementing papers is something i'm thinking of doing.
+
+gonna have to implement a couple of foundational papers first for that one to work out. i'll get on that when i wake up tomorrow.
+
+for now, i'm gonna go ahead and sleep.
+
       `
     },
     "2025-05-20": {
