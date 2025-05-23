@@ -43,10 +43,21 @@ i'll have to think about it some more.
 
 (12:15am) leetcode time.
 
-- 206. Reverse Linked List
+- 206. Reverse Linked List (Easy)
 
-![RLL Soln](https://postimg.cc/v4W6bMtq)
+![RLL Soln](https://i.postimg.cc/vZK77Zgs/image.png)
 
+---
+
+- 23. Merge K Sorted Lists (Hard)
+
+![MKSOLN](https://i.postimg.cc/sDRPv6B4/image.png)
+
+the first problem was rather easy, with the second one being a bit of a struggle. i'm not sure why.
+
+creating a helper function to merge two lists was a good idea. thought of that first, but the implementation of the merge later on was slightly more tricky to think of.
+
+(1:38am) going to go ahead and finish up a script.
 
       `
     },
