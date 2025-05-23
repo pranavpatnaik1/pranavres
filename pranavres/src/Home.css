@@ -76,13 +76,15 @@
   }
 }
 
-/* This ensures only the home page doesn't scroll */
-body.home-page .content {
-  overflow: hidden;
-}
+/* This ensures only the home page doesn't scroll on desktop */
+@media (min-width: 769px) {
+  body.home-page .content {
+    overflow: hidden;
+  }
 
-body.home-page {
-  overflow: hidden;
+  body.home-page {
+    overflow: hidden;
+  }
 }
 
 /* Mobile styles */
@@ -90,9 +92,11 @@ body.home-page {
   .home-container {
     font-size: 1.1em;
     padding: 20px;
-    height: 100vh;
+    height: auto; /* Allow content to determine height */
+    min-height: 100vh;
     justify-content: flex-start;
     padding-top: 40px;
+    overflow: visible; /* Allow scrolling on mobile */
   }
 
   .home-content {
@@ -101,7 +105,7 @@ body.home-page {
   }
 
   .home-image {
-    display: none; /* Hide image on mobile */
+    display: none;
   }
 
   .home-text {
