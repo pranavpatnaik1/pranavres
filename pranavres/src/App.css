@@ -758,13 +758,14 @@ html body .sidebar::-webkit-scrollbar {
     position: relative;
     height: auto;
     top: 0;
+    overflow-y: visible;
     padding-bottom: 60px; /* Make room for social links */
   }
 
   .app-container {
     flex-direction: column;
-    position: relative;
-    overflow-y: auto;
+    position: static;
+    overflow-y: visible;
   }
 
   .selected-entry h2 {
