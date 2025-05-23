@@ -35,11 +35,19 @@ not sure how much more i can do to it. will have to update the 'projects' and 'w
 
 need to fix the calendar to show the correct dates, and make everything look a bit cleaner.
 
-(9:22pm) gonna go ahead and finish up some leetcode problems, then script out a new post on instagram.
+(9:22pm) gonna spend the rest of the night working on this website, then go do some leetcode/neetcode.
 
 i'm thinking of doing a 'what i've been up to' series of posts on instagram.
 
 i'll have to think about it some more.
+
+(12:15am) leetcode time.
+
+- 206. Reverse Linked List
+
+![RLL Soln](https://media.discordapp.net/attachments/1355385233637249208/1375333668683386880/image.png?ex=68314ecb&is=682ffd4b&hm=659a13964382f06b177bdb666940f2696d0f1bf7d86283d14f0009f6a3c2dbc5&=&format=webp&quality=lossless&width=1035&height=806)
+
+
       `
     },
     "2025-05-20": {
