@@ -1,0 +1,131 @@
+.home-container {
+  height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.5;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-height: 100%;
+}
+
+.home-text {
+  flex: 1;
+}
+
+.home-text a:hover {
+  color: #ae0000;
+  font-weight: 700;
+  transition: all 0.1s ease;
+}
+
+.home-image {
+  flex: 0 0 200px;
+  height: 200px;
+  border-radius: 150px;
+  object-fit: cover;
+  opacity: 0;
+  color: #ae000000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0);
+}
+
+.home-container p {
+  margin-bottom: 0.2em;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.home-greeting {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 0;
+  letter-spacing: -0.03em;
+  animation-delay: 0.1s;
+}
+
+/* Stagger the animations for each paragraph */
+.home-container p:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.home-container p:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.home-container p:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* This ensures only the home page doesn't scroll */
+body.home-page .content {
+  overflow: hidden;
+}
+
+body.home-page {
+  overflow: hidden;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .home-container {
+    font-size: 1.1em;
+    padding: 20px;
+    height: 100vh;
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+
+  .home-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .home-image {
+    display: none; /* Hide image on mobile */
+  }
+
+  .home-text {
+    text-align: left;
+  }
+
+  .home-greeting {
+    font-size: 1.4em;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .home-container {
+    font-size: 1em;
+    padding: 16px;
+    padding-top: 32px;
+  }
+
+  .home-greeting {
+    font-size: 1.3em;
+  }
+
+  .home-text {
+    padding: 0 8px;
+  }
+} 

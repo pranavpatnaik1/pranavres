@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+25&family=Manrope:wght@200..800&family=Markazi+Text:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: white; /* Ensure the body background is white */
+  color: black; /* Ensure the body text color is black */
+  font-family: Manrope, sans-serif; /* Optional: Set a default font */
+  letter-spacing: -0.02em;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: left;
+  margin: 0;
+  max-width: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: block;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  border-top: 4px solid #A20000;
+  box-sizing: border-box;
+  background: #fff;
+  position: fixed; /* Prevent page jump */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto; /* Allow scrolling within container */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: blue;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.blog-post {
+  margin-bottom: 20px;
+  padding: 24px 18px;
+  border-radius: 18px;
+  max-height: 96px;         /* Adjust as needed for new padding */
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  border: 1px solid #eee;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03); /* Condense text */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.5s ease forwards;
+  animation-delay: calc(0.1s * var(--post-index, 0));
+}
+
+.blog-post:not(.active)::after {
+  content: '...';
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 48px;
+  height: 28px;
+  background: #fff;
+  color: #888;
+  font-size: 1.2em;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 2;
+  font-weight: bold;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.blog-post h2 {
+  margin: 0;
+  color: #A20000;
+}
+
+.blog-post .date {
+  color: grey;
+  font-size: 0.9em;
+}
+
+.blog-post p {
+  color: black; /* Ensure paragraph text color is black */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #eee;
+  margin: 20px 0;
+}
+
+.sidebar {
+  width: 240px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  z-index: 100;
+  height: 100vh;
+  box-sizing: border-box;
+  
+  /* Inline scrollbar styling for Firefox */
+  scrollbar-width: thin !important;
+  scrollbar-color: #cccccc00 #f5f5f5 !important;
+}
+
+/* Separate WebKit scrollbar styles */
+.sidebar::-webkit-scrollbar {
+  width: 0.5px !important;
+  height: 0.5px !important;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar li {
+  margin-bottom: 6px;
+  display: block;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600; /* Semi-bold */
+  font-size: 0.95em;
+  text-transform: lowercase;
+  display: block;
+  padding: 2px 0;
+  border-left: 2px solid transparent;
+  padding-left: 8px;
+  margin-left: -10px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.sidebar-links a:hover,
+.sidebar-links a.active {
+  color: #A20000;
+  border-left: 2px solid #A20000;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  max-width: none;
+  margin-left: 240px;
+  box-sizing: border-box;
+  height: calc(100vh - 4px); /* Subtract red border height */
+  overflow-y: auto;
+  position: fixed;
+  top: 4px; /* Account for red border */
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 240px);
+  background: white; /* Ensure content has background */
+}
+
+.writing-page {
+  max-width: none;
+  width: 100%;
+}
+
+.writing-section {
+  margin-bottom: 40px;
+}
+
+.writing-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.writing-section li {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.writing-section h2 {
+  color: #A20000;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.writing-section h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.writing-section h3:hover {
+  color: #A20000;
+}
+
+.sidebar-calendar {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.sidebar-calendar h3 {
+  margin-bottom: 10px;
+  color: #A20000;
+}
+
+/* Restore calendar functionality with improved styling */
+.react-calendar {
+  width: 100% !important;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: Inter, sans-serif;
+  line-height: 1.125em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  background-color: white;
+  font-size: 12px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Fix calendar navigation buttons and center month/year */
+.react-calendar__navigation {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #eee;
+  height: auto;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+/* Make all navigation buttons smaller */
+.react-calendar__navigation button {
+  min-width: 20px !important;
+  font-size: 10px !important;
+  padding: 4px 0 !important;
+  background: none;
+  color: #333;
+  flex: 0.5;
+  height: 24px;
+}
+
+/* Make prev/next buttons smaller */
+.react-calendar__navigation__arrow {
+  flex: 0.3 !important;
+  font-size: 12px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make prev2/next2 buttons even smaller */
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+  flex: 0.2 !important;
+  font-size: 8px !important;
+}
+
+/* Ensure the label is centered and takes more space */
+.react-calendar__navigation__label {
+  flex: 3 !important;
+  pointer-events: none !important;
+  cursor: default !important;
+  text-align: center;
+  font-size: 11px !important;
+  padding: 4px 0 !important;
+  overflow: visible !important;
+  white-space: nowrap !important;
+  margin: 0 auto;
+}
+
+.react-calendar__navigation__label__labelText {
+  color: #333;
+  font-weight: bold;
+  font-size: 11px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Weekday headers */
+.react-calendar__month-view__weekdays {
+  font-size: 0.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #666;
+  text-align: center;
+  padding: 2px 0;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 2px;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+}
+
+/* Calendar tiles */
+.react-calendar__tile {
+  padding: 5px 0;
+  font-size: 0.75em;
+  text-align: center;
+  color: #333;
+  background: none;
+  height: 28px;
+  line-height: 1;
+}
+
+/* Add these styles for the date-based entries */
+
+.blog-content {
+  max-width: none;
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  min-height: 100vh; /* Ensure content takes full height */
+  will-change: opacity; /* Optimize animation performance */
+}
+
+.selected-entry {
+  margin-bottom: 40px;
+  /* No box, just free space */
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+.selected-entry h2 {
+  color: #333;
+  margin-top: 0;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.no-entry {
+  margin-bottom: 40px;
+  /* No box, just free space */
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+.no-entry h2 {
+  color: #666;
+  margin-top: 0;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.empty-message {
+  color: #999;
+  font-style: italic;
+}
+
+.entry-divider {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  opacity: 0;
+  animation: fadeIn 0.7s ease forwards 0.3s;
+}
+
+.entry-divider hr {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.entry-divider span {
+  color: #666;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.blog-post:hover {
+  background-color: #f9f9f9;
+  border-color: #eee;
+}
+
+.blog-post.active {
+  background-color: #f8f8f8;
+  border: 1px solid #eee;
+}
+
+.blog-post h3 {
+  margin: 0 0 10px 0;
+  color: #444;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.blog-post.active h3 {
+  color: #333;
+}
+
+/* Calendar styling for dates with entries */
+.has-entry {
+  background-color: #f8f0f0;
+  position: relative;
+}
+
+.has-entry::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 2px;
+  background-color: #A20000;
+  border-radius: 50%;
+}
+
+.react-calendar__tile--active.has-entry {
+  background-color: #A20000;
+}
+
+.react-calendar__tile--active.has-entry::after {
+  background-color: white;
+}
+
+/* Global scrollbar styling */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A20000;
+}
+
+/* Force sidebar scrollbar to be extra thin */
+.sidebar::-webkit-scrollbar {
+  width: 1px !important;
+}
+
+/* Additional fix for potential specificity issues */
+html body .sidebar::-webkit-scrollbar {
+  width: 0.5px !important;
+}
+
+/* Add box-sizing to all elements for consistent sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Add sidebar header styling */
+.sidebar-header {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-header h1 {
+  font-size: 2.1em;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-transform: lowercase;
+  letter-spacing: -0.5px;
+}
+
+.sidebar-header h1 a {
+  display: inline-block;
+  background: linear-gradient(to top, #333 50%, #A20000 50%);
+  background-size: 100% 200%;
+  background-position: 0 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 1.5s cubic-bezier(0.4,0,0.2,1);
+  /* For Firefox */
+  background-clip: text;
+  color: transparent;
+}
+
+.sidebar-header h1 a:hover {
+  background-position: 0 0;
+}
+
+.sidebar-links a:hover{
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Add social links styling */
+.social-links {
+  margin-top: auto;
+  padding-top: 30px;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 30px;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.social-links a {
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  display: block;
+  font-size: 0.9em;
+  text-transform: none;
+}
+
+.social-links a:hover {
+  color: #A20000;
+  text-decoration: none;
+}
+
+.selected-entry img,
+.blog-post img {
+  display: block;
+  margin: 16px auto;
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.blog-post-preview {
+  color: #222;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  white-space: pre-line;
+}
+
+.sidebar-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* smaller gap between links */
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 0; /* remove default margin if any */
+}
+
+.sidebar-links {
+  margin-bottom: 8px;
+}
+
+/* Make research page text bolder */
+.blog-content h2,
+.blog-content h3,
+.blog-content p,
+.blog-content .blog-post-preview,
+.entry-divider span {
+  font-weight: 600; /* Slightly bolder than normal */
+}
+
+/* Make headings even bolder */
+.blog-content h2,
+.blog-content h3 {
+  font-weight: 700;
+}
+
+/* Ensure selected entry has proper emphasis */
+.selected-entry {
+  font-weight: 600;
+}
+
+/* Animation for research page fade-in */
+.blog-content {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.selected-entry,
+.no-entry {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.entry-divider {
+  opacity: 0;
+  animation: fadeIn 0.7s ease forwards 0.3s;
+}
+
+.blog-posts {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards 0.4s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Individual blog post animations */
+.blog-post {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.5s ease forwards;
+  animation-delay: calc(0.1s * var(--post-index, 0));
+}
+
+/* Update mobile styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidebar-header {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .sidebar-header h1 {
+    font-size: 1.2em;
+    margin: 0;
+    line-height: 1;
+  }
+
+  /* Align navigation links with header */
+  .sidebar-links {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar-links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Align with header text */
+  }
+
+  .sidebar-links a {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    border-left: none;
+    position: relative;
+  }
+
+  .sidebar-links a:hover,
+  .sidebar-links a.active {
+    border-left: none;
+    color: #A20000;
+  }
+
+  .sidebar-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #A20000;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+  }
+
+  .sidebar-links a:hover::after,
+  .sidebar-links a.active::after {
+    transform: scaleX(1);
+  }
+
+  /* Move social links to bottom */
+  .social-links {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    padding: 12px;
+    background: white;
+    border-top: 1px solid #eee;
+    margin: 0;
+    z-index: 100;
+  }
+
+  /* Adjust content to account for bottom social bar */
+  .content {
+    margin-left: 0;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    height: auto;
+    top: 0;
+    padding-bottom: 60px; /* Make room for social links */
+  }
+
+  .app-container {
+    flex-direction: column;
+    position: relative;
+    overflow-y: auto;
+  }
+
+  .selected-entry h2 {
+    font-size: 1.4em;
+  }
+
+  .blog-post-preview {
+    font-size: 0.9em;
+  }
+
+  /* Hide calendar on mobile */
+  .sidebar-calendar {
+    display: none;
+  }
+
+  /* Adjust blog posts for mobile */
+  .blog-post {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .content {
+    padding: 16px;
+  }
+
+  .blog-post {
+    padding: 12px;
+  }
+
+  .sidebar-header h1 {
+    font-size: 1.1em;
+  }
+
+  .selected-entry h2 {
+    font-size: 1.2em;
+  }
+
+  .sidebar-links {
+    font-size: 0.9em;
+  }
+
+  .sidebar-links ul {
+    gap: 12px;
+  }
+
+  .social-links {
+    gap: 12px;
+    font-size: 0.85em;
+    padding: 10px;
+  }
+}
+
