@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from 'react-router-dom';
 import Writing from './Writing';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
@@ -205,7 +205,7 @@ oh man
             </div>
             <div className="sidebar-links">
               <ul>
-                <li><NavLink to="/" end>research</NavLink></li>
+                <li><NavLink to="/research" end>research</NavLink></li>
                 <li><NavLink to="/projects">projects</NavLink></li>
                 <li><NavLink to="/writing">writing</NavLink></li>
               </ul>
@@ -238,10 +238,11 @@ oh man
           </nav>
           <main className="content">
             <Routes>
-              <Route path="/" element={<Research />} />
+              <Route path="/research" element={<Research />} />
+              <Route path="/" element={<Navigate to="/home" />} />
               <Route path="/home" element={<Home />} />
-              <Route path="/writing" element={<Writing />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/writing" element={<Writing />} />
             </Routes>
           </main>
         </div>

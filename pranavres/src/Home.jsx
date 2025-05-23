@@ -24,7 +24,7 @@ export default function Home() {
             founder @ vanakian, currently building mathema ($80k in funding)
           </p>
           <p>
-            i make things. my current love is reading research papers, building <a href="/projects" rel="noopener noreferrer" style={{ color: "#A20000", textDecoration: "none" }}>projects</a>, then <a href="https://www.instagram.com/pranavpatnaik_/" target="_blank" rel="noopener noreferrer" style={{ color: "#A20000", textDecoration: "none" }}>posting all about it.</a>
+            i make things. my current routine is <a href="/research" rel="noopener noreferrer" style={{ color: "#A20000", textDecoration: "none" }}>reading research papers</a>, building <a href="/projects" rel="noopener noreferrer" style={{ color: "#A20000", textDecoration: "none" }}>projects</a>, then <a href="https://www.instagram.com/pranavpatnaik_/" target="_blank" rel="noopener noreferrer" style={{ color: "#A20000", textDecoration: "none" }}>posting all about it.</a>
           </p>
           <p>
             i also love a good pizza.
