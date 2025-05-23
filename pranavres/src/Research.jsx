@@ -269,7 +269,7 @@ will post on twitter about the paper in a bit. gonna go play spider-man w/ the f
 
   return (
     <div className="blog-content">
-      {selectedEntry ? (
+      {selectedEntry && selectedEntry.content ? (
         <div className="selected-entry">
           <h2>{formatDisplayDate(parseDateString(selectedEntry.date))}</h2>
           <ReactMarkdown>{selectedEntry.content}</ReactMarkdown>
@@ -277,7 +277,7 @@ will post on twitter about the paper in a bit. gonna go play spider-man w/ the f
       ) : (
         <div className="no-entry">
           <h2>{formatDisplayDate(parseDateString(selectedDate))}</h2>
-          <p className="empty-message">No entry for this date.</p>
+          <p className="empty-message">nothing to see here, check later!</p>
         </div>
       )}
 
