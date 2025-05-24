@@ -29,7 +29,53 @@ function Research() {
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
     "2025-05-23": {
-      content: ``
+      content: `long day @ uni today.
+      
+(4:41pm) working on leetcode now.
+      
+finished a problem:
+
+- Binary Search (Easy)
+
+![soln](https://i.postimg.cc/hPqXVdQk/image.png)
+
+(9:43pm) spent the day at uni, didn't get much work done.
+
+i'll be doing a seminar on leetcode in a few minutes,
+but after that i'll be working on this fastai course.
+
+i'd better get on posting reels and getting into the flow of things.
+it's rather frustrating that i'm finding myself at the end of days, with 0 progress and nothing to show for it.
+
+all that tells me is that i lack urgency.
+i'm pretty sure i can come up with a list of reasons why.
+
+i'm more than capable of being where i want to be; i just need to be willing to put in the work. 
+i can define three categories that need to be addressed in my career:
+
+- leetcode (for interview prep)
+- research (for my own knowledge, and for the sake of my own projects)
+- content creation (personal brand)
+
+tackling all of these is more than possible. 
+i just need time by myself. time in the workshop, time in the lab, time in the library, time in the field.
+
+this is the first time i've felt like i'm on the right track in a while. 
+there's a very obvious reason for that. 
+but i'm still not where i want to be. 
+i'm right there. i'm so fucking close to where i want to be i can taste it.
+
+tomorrow's saturday. i'll be at it all day. tonight, i'll go ahead and finish up this fastai course, then work on some leetcode some more. it's 
+
+it's times like these that i need to remind myself that i love computer science, 
+and i'll be damned if i'm not going to make something of myself.
+i feel that what has me letting me off the accelerator is i know exactly what i need to do.
+the path ahead is clear as day.
+
+now it's just up to me to execute.
+
+i've been handed a golden ticket, and i'm not about to let it slip through my fingers.
+`
 
     },
     "2025-05-22": {
