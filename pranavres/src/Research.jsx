@@ -75,6 +75,10 @@ the path ahead is clear as day.
 now it's just up to me to execute.
 
 i've been handed a golden ticket, and i'm not about to let it slip through my fingers.
+
+(1:02am) working on the fastai course now.
+
+
 `
 
     },
@@ -145,8 +149,8 @@ writing that out made me realize how stupid that sounds. give me a sec..
     "2025-05-21": {
       content: `found new resources to check out for AI/ML.
 
-- fastAI
-- cs231 & cs224 from stanford
+- [fastAI](https://course.fast.ai/) 
+- [cs231](https://cs231n.stanford.edu/) & [cs224](https://web.stanford.edu/class/cs224n/) from stanford
 
 current priority should be finishing up this fastAI course (pt1 & 2).
 
