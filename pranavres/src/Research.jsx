@@ -63,6 +63,10 @@ i'm proud of it. it represents a new shift in how i want to post on instagram.
 i'll be doing a lot more of this. posting about research, papers, and all that good stuff.
 
 i'm gonna spend the rest of the night working on leetcode, but before i do that, i've a letter to write.
+
+(2:06am) finished the letter, finished a new video, but i'm conked out.
+
+going to bed now.
       `
     },
     "2025-05-23": {
