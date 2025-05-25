@@ -28,6 +28,43 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-05-24": {
+      content: `spending today on three things:
+
+- fastai course
+- leetcode
+- recording a script
+
+i'll finish up the video i was working on before about reimplementing papers, then finish up the script i'm working on.
+i haven't even brushed my teeth yet. been busy with emails. should probably get on that.
+
+(2:48pm) starting the fastai course now.
+
+(3:15pm) this course is pretty dogshit. i'm better off using my time reading papers and reimplementing them.
+will go ahead and do that now.
+
+(3:44pm) finished up some work Word2Vec. will go ahead and record the script i've been sitting on for a while now.
+
+(12:47am) update: ended up recording four videos. batch recording is a godsend.
+the current workflow is as follows:
+
+- record
+- script
+- spend the rest of the week editing videos
+
+i got 4 videos done, but i'm almost certain i could have done more. maybe even 7.
+the thing is, too: i'm proud of the videos i did do. they're good. very good.
+
+![batch recording](https://i.postimg.cc/Kvyb2g2x/image.png)
+
+posted a new [video](https://www.instagram.com/reel/DKDnh0kM48w/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) today.
+i'm proud of it. it represents a new shift in how i want to post on instagram.
+
+i'll be doing a lot more of this. posting about research, papers, and all that good stuff.
+
+i'm gonna spend the rest of the night working on leetcode, but before i do that, i've a letter to write.
+      `
+    },
     "2025-05-23": {
       content: `long day @ uni today.
       
