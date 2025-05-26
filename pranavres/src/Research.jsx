@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import ReactMarkdown from 'react-markdown';
+import Comments from './components/Comments';
 
 function Research() {
   // Format date to display in a readable format
@@ -28,6 +29,47 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-05-25": {
+      content: `it's 2:49am, i'm about to go to bed.
+
+after i wake up in the morning, i'll work on three things:
+
+- leetcode
+- recording/editing videos
+- reimplementing Word2Vec
+
+i'm nearly finished with the cold email reel. will go ahead and finish it up tomorrow.
+in all honesty, i really should finish up some more cold emails. i've been slacking on that.
+
+i've also been slacking on school work. need to get on that cs prep & assignment.
+
+csc148:
+- prep, prep quiz
+- assignment
+
+moreover, need to update my resume. specifically need to add everything i've done over the last few months.
+
+- 4.0 gpa
+- mathema, $80k
+- @pranavpatnaik_, 5k followers
+- several misc. research projects in ML
+- hackathons won
+- ...among other things
+
+(10:53pm) posted a new [reel](https://www.instagram.com/reel/DKFIoZzNs6M/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==).
+didn't think it'd do well, but it's doing much better than i expected. will have to go ahead and post a reel about the cold email template soon.
+
+but, admittedly, i haven't done much work on research lately.
+i've been busy with other misc. things, like getting back into the rhythm of posting again, but that really shouldn't be an excuse.
+
+i'll be working on the word2vec paper tomorrow.
+then, i'll post the new reel i've been editing.
+
+i'm liking this new rhythm. more of this, please.
+gonna spend the rest of the night doing leetcode.
+
+      `
+    },
     "2025-05-24": {
       content: `spending today on three things:
 
@@ -67,6 +109,10 @@ i'm gonna spend the rest of the night working on leetcode, but before i do that,
 (2:06am) finished the letter, finished a new video, but i'm conked out.
 
 going to bed now.
+
+(2:37pm) wrote another letter hahaha.
+
+should definitely get to bed now.
       `
     },
     "2025-05-23": {
@@ -364,6 +410,7 @@ will post on twitter about the paper in a bit. gonna go play spider-man w/ the f
         <div className="selected-entry">
           <h2>{formatDisplayDate(parseDateString(selectedEntry.date))}</h2>
           <ReactMarkdown>{selectedEntry.content}</ReactMarkdown>
+          <Comments entryDate={selectedEntry.date} />
         </div>
       ) : (
         <div className="no-entry">
