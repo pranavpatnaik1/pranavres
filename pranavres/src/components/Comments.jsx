@@ -71,7 +71,7 @@ export default function Comments({ entryDate }) {
         <textarea
           value={newComment}
           onChange={(e) => setNewComment(e.target.value)}
-          placeholder="add your thoughts here."
+          placeholder="add your thoughts here"
           required
           className="comment-textarea"
         />

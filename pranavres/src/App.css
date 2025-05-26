@@ -840,6 +840,12 @@ html body .sidebar::-webkit-scrollbar {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-family: inherit;
+  color: #ffffff;
+}
+
+.comment-input::placeholder,
+.comment-textarea::placeholder {
+  color: #999;
 }
 
 .comment-textarea {
