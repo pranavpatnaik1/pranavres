@@ -84,6 +84,8 @@ gonna spend the rest of the night doing leetcode.
 rewatching the neetcode course like it's the first time really lets me appreciate the course.
 i just racked up a new-found understanding of the huge difference between O(n) and O(log n) besides merely looking at the graphs.
 
+![neetcode](https://i.postimg.cc/vmqJ5M73/image.png)
+
 was also thinking of doing a (non-continuous) series of posts like, "here's what i studied last night." super quick, just a timelapse of what i did.
 i think that'd be a fun idea.
 besides that, i'm gonna post about distraction tomorrow. should be a fun one; a cool, general piece of advice that i think anyone that was my situation would benefit from.
