@@ -29,6 +29,27 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-05-26": {
+      content: `it's 3:06am; let's plan out the day.
+
+- leetcode (Tree, Backtracking, Heap/Priority Queue)
+- research (word2vec)
+- content (script about studying)
+
+before i go to bed, i'm gonna go for another leetcode problem. it's an easy: Guess Number Higher or Lower.
+seems like a rather simple Binary Search variation.
+
+(3:22am) finished it. like i said, a rather simple Binary Search variation.
+
+![guessnumber](https://i.postimg.cc/8zyPrMjv/image.png)
+
+here's my soln:
+
+- Guess Number Higher or Lower (Easy)
+
+![guessnumbersoln](https://i.postimg.cc/C5NdPtLP/image.png)
+      `
+    },
     "2025-05-25": {
       content: `it's 2:49am, i'm about to go to bed.
 
@@ -70,6 +91,8 @@ then, i'll post the new reel i've been editing.
 i'm liking this new rhythm. more of this, please.
 gonna spend the rest of the night doing leetcode.
 
+---
+
 (1:04am) did the neetcode course, brushed up on Insertion Sort & MergeSort.
 
 - Insertion Sort
@@ -92,6 +115,40 @@ besides that, i'm gonna post about distraction tomorrow. should be a fun one; a 
 
 it's 1:12am. i'm gonna hit the hay soon, but neetcode's itching at my brain. i wanna do more.
 will add updates.
+
+(2:09am) continuing neetcode.
+
+i fucking hate sorting algorithms. why would anyone want to learn this shit?
+before anyone cuts me off, i'm not saying that i'm not good at memorizing them. i'm saying i fucking hate them.
+
+- Quick Sort
+
+![quicksort](https://i.postimg.cc/D0t43YNQ/image.png)
+
+i'm skipping Bucket Sort and moving on to his lectures on Binary Search.
+
+coming up: **Search Array & Search Range.**
+
+![binarysearch](https://i.postimg.cc/3rsm0dLL/image.png)
+
+forgot to mention: finished up the week 4 prep quiz for 148, going to do the rest of the prep tomorrow.
+need to start on that assignment too.
+anyway, onto to the next w/ neetcode.
+
+finished up Binary Search.
+
+![binarysearch](https://i.postimg.cc/vmjNFV9d/image.png)
+
+went ahead and also finished a medium problem: Search a 2D Matrix.
+
+![search2dmatrix](https://i.postimg.cc/xT4HP3SY/image.png)
+
+here's my soln:
+
+![search2dmatrixsoln](https://i.postimg.cc/hvJ44xZb/image.png)
+
+tomorrow, i'll get to Trees, Backtracking, and Heap/Priority Queue.
+pretty excited to dig deep into those. backtracking's a fun one.
       `
     },
     "2025-05-24": {
