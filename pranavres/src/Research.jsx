@@ -81,9 +81,15 @@ gonna spend the rest of the night doing leetcode.
 - MergeSort Time Complexity
 ![mstime](https://i.postimg.cc/Qx07ryjc/image.png)
 
+rewatching the neetcode course like it's the first time really lets me appreciate the course.
+i just racked up a new-found understanding of the huge difference between O(n) and O(log n) besides merely looking at the graphs.
 
+was also thinking of doing a (non-continuous) series of posts like, "here's what i studied last night." super quick, just a timelapse of what i did.
+i think that'd be a fun idea.
+besides that, i'm gonna post about distraction tomorrow. should be a fun one; a cool, general piece of advice that i think anyone that was my situation would benefit from.
 
-
+it's 1:12am. i'm gonna hit the hay soon, but neetcode's itching at my brain. i wanna do more.
+will add updates.
       `
     },
     "2025-05-24": {
