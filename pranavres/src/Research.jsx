@@ -69,6 +69,21 @@ then, i'll post the new reel i've been editing.
 
 i'm liking this new rhythm. more of this, please.
 gonna spend the rest of the night doing leetcode.
+
+(1:04am) did the neetcode course, brushed up on Insertion Sort & MergeSort.
+
+- Insertion Sort
+![neetcode](https://i.postimg.cc/c45h0Hmx/image.png)
+
+- MergeSort
+![mergesort](https://i.postimg.cc/NMH8s7dB/image.png)
+
+- MergeSort Time Complexity
+![mstime](https://i.postimg.cc/Qx07ryjc/image.png)
+
+
+
+
       `
     },
     "2025-05-24": {
