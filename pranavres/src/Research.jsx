@@ -61,7 +61,7 @@ didn't think it'd do well, but it's doing much better than i expected. will have
 
 ![cold email reel](https://i.postimg.cc/t4P5MTpY/image.png) 
 
-but, admittedly, i haven't done much work on research lately.
+though, i admittedly haven't done much work on research lately.
 i've been busy with other misc. things, like getting back into the rhythm of posting again, but that really shouldn't be an excuse.
 
 i'll be working on the word2vec paper tomorrow.
@@ -69,7 +69,6 @@ then, i'll post the new reel i've been editing.
 
 i'm liking this new rhythm. more of this, please.
 gonna spend the rest of the night doing leetcode.
-
       `
     },
     "2025-05-24": {
