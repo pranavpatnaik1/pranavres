@@ -59,6 +59,8 @@ moreover, need to update my resume. specifically need to add everything i've don
 (10:53pm) posted a new [reel](https://www.instagram.com/reel/DKFIoZzNs6M/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==).
 didn't think it'd do well, but it's doing much better than i expected. will have to go ahead and post a reel about the cold email template soon.
 
+![cold email reel](https://i.postimg.cc/t4P5MTpY/image.png) 
+
 but, admittedly, i haven't done much work on research lately.
 i've been busy with other misc. things, like getting back into the rhythm of posting again, but that really shouldn't be an excuse.
 
