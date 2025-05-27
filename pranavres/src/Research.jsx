@@ -52,6 +52,19 @@ here's my soln:
 (3:26am) gonna hit the hay now. long day tomorrow.
 
 ---
+
+(12:55am) it's now 12:55am in the NEXT DAY (2025/05/27) hahaha, but i'll recount how the day went.
+spent the day working on recording, editing, and posting videos.
+it's imperative that i get into the swing of things content, since that's really the mode of vertical growth that i'm gambling on, besides networking & overall work output.
+besides that, i finished up the week 4 prep for 148. i'm gonna take a look at the assignment later tonight (or tomorrow).
+
+it's been more challenging than i thought it'd be to get back into the swing of things for *research.*
+it requires rather a lot of focus, something i've been rather lacking of late (due to content).
+hopefully i'll be able to do more of it later on; i've been loving the neetcode course.
+
+(1:04am) gonna go ahead and try the suggested neetcode problems. up next: "First Bad Version." scary!
+
+
       `
     },
     "2025-05-25": {
