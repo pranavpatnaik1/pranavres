@@ -64,7 +64,47 @@ hopefully i'll be able to do more of it later on; i've been loving the neetcode 
 
 (1:04am) gonna go ahead and try the suggested neetcode problems. up next: "First Bad Version." scary!
 
+- First Bad Version (Easy)
 
+![firstbadversion](https://i.postimg.cc/zXrwnXdC/image.png)
+
+less challenging that i thought i'd be. just another binary search variation.
+now moving onto "Koko Eating Bananas."
+
+- Koko Eating Bananas (Medium)
+
+![kokoeatingbananas](https://i.postimg.cc/ZRdBnRQv/image.png)
+
+it's yet another binary search variation, this time also with finding the "smallest" maximum value.
+slightly more challenging than the previous one, but not by much. got it done.
+going to move on to the rest of the course now.
+trees, baby!
+
+- Search in a Binary Search Tree (Easy)
+
+![searchinabinarysearchtree](https://i.postimg.cc/xCjw0x1X/image.png)
+
+extremely easy, of course. reminds me of 148.
+
+- Insert into a Binary Search Tree (Medium)
+
+![insertintoabinarysearchtree](https://i.postimg.cc/52tBBD24/image.png)
+
+again. this is ripped straight from 148. moving onto the next one: Delete Node in a BST.
+this one's probably gonna be slightly more challegning, due to all the must-consider cases:
+
+- one child
+- two children (minValue)
+
+i suppose that isn't too many cases, hahaha. okay, moving on. let's do this
+
+- Delete Node in a BST (Medium)
+
+![deletenodeinabinarysearchtree](https://i.postimg.cc/B6jVL9Yt/image.png)
+
+like i said, it's a bit more challenging.
+i'll take a slight break, then move on to the next section. i'm sort of itching to see how this recording looks hahahaha.
+that's the issue with recording myself- i'm so conscious about the damn camera. i'm sat like a fucking brick right now
       `
     },
     "2025-05-25": {
