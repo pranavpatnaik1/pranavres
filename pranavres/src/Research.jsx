@@ -56,6 +56,29 @@ i could go on and on about how i deserve more, and i don't deserve to be treated
 keep working, lol.
 
 every day that i spend working, it's cementing the person i'm becoming.
+i'm not where i want to be, but i'm not where i was.
+
+that's all that matters.
+
+---
+
+gonna go ahead and work on a cs assignment now.
+
+side note: i was beating myself up all day in the group chat over the last reel's performance
+
+![pranavpatnaikperf](https://i.postimg.cc/yxhd9d2s/image.png)
+
+but i got a couple of great messaegs, i'll attach them below:
+
+![editinggood](https://i.postimg.cc/T3V9wqt4/image.png)
+![editinggood2](https://i.postimg.cc/6pcMcfCG/image.png)
+![editinggood3](https://i.postimg.cc/DwNX7WTM/image.png)
+
+hell yeah. incredily grateful. feels dope as hell to be able to help people and be appreciated for it.
+fate's totally shat on me lately, but i'm not about to let that stop me from being great.
+
+(12:03am) gonna go ahead and work on the assignment now.
+
 
 `
     },
