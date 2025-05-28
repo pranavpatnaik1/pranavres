@@ -29,6 +29,36 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-05-27": {
+      content: `pretty shit day overall
+
+the reel i posted today didn't do well.
+i suppose that's to be expected since it's rather technical, but it's still disheartening.
+i also barely got any work done today-- leetcode or otherwise.
+
+after i'm done typing this up, i'll go ahead and do some leetcode.
+i'm not sure what i'll do yet.
+
+i'll keep reminding myself that i'm not where i want to be. not close to it.
+that even if you're working hard, and you're still not where you want to be, it's not because you're not enough.
+i need more time in the lab, pay my dues, and grind things out.
+
+i've been listening to "DtMF" on repeat. pretty fucking good song, lol
+
+in all honesty, i was hoping to get more done today.
+but it was a good time to take a break and clear my head.
+
+i can't stay too bummed out about today, though. i've a lot on my mind (and on my plate), but it's not worth shitting the bed over.
+i could go on and on about how i deserve more, and i don't deserve to be treated this way by God, but that's not the point.
+
+"i'm so unlucky!" "i'm fuuuuucked!" "whatever am i gonna do?"
+
+keep working, lol.
+
+every day that i spend working, it's cementing the person i'm becoming.
+
+`
+    },
     "2025-05-26": {
       content: `it's 3:06am; let's plan out the day.
 
