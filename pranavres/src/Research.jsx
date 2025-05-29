@@ -92,6 +92,18 @@ i'll keep track of k via a counter, usbtract it & the kth node i visit in the in
 works like a charm.
 
 ![kthsmallestinbstsoln](https://i.postimg.cc/xdmxs4R0/image.png)
+
+i think i'll do one more problem, then go to sleep.
+
+- Construct Binary Tree from Preorder and Inorder Traversal (Medium)
+
+finished, but left with an extremely inefficent soln (used .index() to find the root in inorder).
+
+![constructbinarytreefrompreorderandinordertraversal](https://i.postimg.cc/W4Mzw0dd/image.png)
+
+i'll go ahead and implement a better soln tomorrow. for now, i'm gonna go to sleep.
+
+goodnight, stars.
       `
     },
     "2025-05-27": {
