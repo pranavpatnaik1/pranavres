@@ -44,6 +44,27 @@ i'm also going to finish another reel before the end of tonight. should be able 
 no leetcode today. woohoo
 
 okay, nvm. i'll go ahead and do some leetcode just to continue the streak.
+
+going through neetcode now:
+
+- reviewing depth-first search:
+
+![depthfirstsearch](https://i.postimg.cc/3wG596sB/image.png)
+
+pausing the course for now to review a key insight on reducing addition in time complexity.
+given some addition time complexity O(n + n log n), we can "reduce" it O(n log n).
+
+why? because n log n is larger than n, for all n > 10.
+
+![insight](https://i.postimg.cc/nhMVvnn9/image.png)
+
+in other words, it bounds it.
+remember, big O notation is all about the upper bound.
+now, we understand that constants don't matter when it comes to big O notation.
+
+here's a clean and simple way of thinking about it:
+
+![insight2](https://i.postimg.cc/y8bf3FT9/image.png)
       `
     },
     "2025-05-27": {
