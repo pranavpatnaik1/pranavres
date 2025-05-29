@@ -103,7 +103,10 @@ finished, but left with an extremely inefficent soln (used .index() to find the 
 
 i'll go ahead and implement a better soln tomorrow. for now, i'm gonna go to sleep.
 
-goodnight, stars.
+notes from tn:
+
+![notes](https://i.postimg.cc/fymndf2L/image.png)
+![notes2](https://i.postimg.cc/yxVXhVnZ/image.png)
       `
     },
     "2025-05-27": {
