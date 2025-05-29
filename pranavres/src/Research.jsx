@@ -46,6 +46,43 @@ ok. can't think straight. gotta go to sleep. will update in the morning.
 **[sleep: 3:36am]**
 
 ---
+
+**[wake: 10:10am]**
+
+(12:08pm) going to go ahead and start leetcode now.
+
+i'm gonna try again to do the leetcode problem i started yesterday. "Construct Binary Tree from Preorder and Inorder Traversal" was pretty strange, so i'm gonna do it again.
+
+what does each traversal give us?
+
+- preorder: root, left, right
+- inorder: left, root, right
+- postorder: left, right, root
+
+now, we know that the first element in preorder is the root.
+so, we can find the root in inorder, and split the left and right subtrees.
+we quickly find a recursive solution by doing this.
+
+(1:45pm) i'm getting stuck on this one problem; i'm moving on for now.
+it's way too tricky to relate the preorder index to the inorder index.
+continuing on with neetcode now.
+
+(3:12pm) finished two leetcode problems:
+
+- Binary Tree Level Order Traversal (Medium)
+
+![soln](https://i.postimg.cc/Jhz1Ctdr/image.png)
+
+- Binary Tree Right Side View (Medium)
+
+![soln](https://i.postimg.cc/rstCpVs3/image.png)
+
+the Binary Tree Right Side View problem is funny, but it's not that bad. it was just a matter of returning the final node of the level.
+gotta get used to thinking of trees in that sense.
+
+moving on to Backtracking now.
+
+
       `
     },
     "2025-05-28": {
