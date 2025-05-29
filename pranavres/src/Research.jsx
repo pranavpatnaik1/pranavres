@@ -65,6 +65,11 @@ now, we understand that constants don't matter when it comes to big O notation.
 here's a clean and simple way of thinking about it:
 
 ![insight2](https://i.postimg.cc/y8bf3FT9/image.png)
+
+anyway. it's always great to be able to review concepts i've already learned.
+attaching this for reference for DFS:
+
+![dfs](https://i.postimg.cc/ZYBk55FC/image.png)
       `
     },
     "2025-05-27": {
