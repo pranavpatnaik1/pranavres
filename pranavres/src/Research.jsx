@@ -32,18 +32,18 @@ function Research() {
     "2025-05-29": {
       content: `good morning.
 
-      (3:31am) it's 3:31am. i'm up.
+(3:31am) it's 3:31am. i'm up.
 
-      not for long. i'm just typing out what i'd like to do after i wake up.
+not for long. i'm just typing out what i'd like to do after i wake up.
 
-      - leetcode (finish trees, associated problems)
-      - edit content (cold email reel?)
-      - research (finish word2vec)
+- leetcode (finish trees, associated problems)
+- edit content (cold email reel?)
+- research (finish word2vec)
 
-      i'll also go ahead and update the site with projects + other essays i've written.
-      ok. can't think straight. gotta go to sleep. will update in the morning.
+i'll also go ahead and update the site with projects + other essays i've written.
+ok. can't think straight. gotta go to sleep. will update in the morning.
 
-      ---
+---
       `
     },
     "2025-05-28": {
