@@ -70,6 +70,28 @@ anyway. it's always great to be able to review concepts i've already learned.
 attaching this as reference for DFS:
 
 ![dfs](https://i.postimg.cc/ZYBk55FC/image.png)
+
+alright. moving onto some problems now.
+
+- Binary Tree Inorder Traversal (Easy)
+
+![binarytreeinordertraversal](https://i.postimg.cc/dt1tjyCn/image.png)
+
+easy enough.
+
+- Kth Smallest Element in a BST (Medium)
+
+![kthsmallestinbst](https://i.postimg.cc/Dw04jzWd/image.png)
+
+this one's slightly more challenging solely due to the early-stopping idea of making it more optimal.
+i didn't implement it here, but i'll go ahead and think about it some more.
+
+(3:01am) implemented the early-stopping idea. instead of the sub-optimal soln, where i return inorder[k - 1] (since it has to traverse the entire tree), i'll keep track of k.
+i'll keep track of k via a counter, usbtract it & the kth node i visit in the inorder traversal is the kth smallest.
+
+works like a charm.
+
+![kthsmallestinbstsoln](https://i.postimg.cc/xdmxs4R0/image.png)
       `
     },
     "2025-05-27": {
