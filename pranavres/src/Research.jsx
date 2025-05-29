@@ -82,6 +82,11 @@ gotta get used to thinking of trees in that sense.
 
 moving on to Backtracking now.
 
+(3:31pm) backtracking is fucking stupid. unfortunately, i'm pretty bad at it. i'll keep working at it, but for now i'll move on to Heap / Priority Queue in the course.
+
+heap / priority queue is a more intuitive concept, so i'll be able to do more with it.
+
+![heap](https://i.postimg.cc/Wb1fM2PQ/image.png)
 
       `
     },
