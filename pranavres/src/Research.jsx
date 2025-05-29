@@ -43,6 +43,8 @@ not for long. i'm just typing out what i'd like to do after i wake up.
 i'll also go ahead and update the site with projects + other essays i've written.
 ok. can't think straight. gotta go to sleep. will update in the morning.
 
+**[sleep: 3:36am]**
+
 ---
       `
     },
