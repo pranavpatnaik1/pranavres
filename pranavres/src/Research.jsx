@@ -29,6 +29,23 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-05-28": {
+      content: `good morning. it's 11:12am, time to get to work.
+
+i'm at uni for two hours, i'll spend this time working on the Word2Vec paper, then leetcode.
+
+(1:58am) spent the day working on the paper. got some good progress in, i'll have to think about how to make this into a reel.
+it's becoming evident that to make a good reel, telling a "story" is key.
+so, whether it's a challenge i came across, or a problem i solved, or a new concept i learned, or a new project i'm working on, etc. i'll make sure to keep note of it.
+
+finished up a new reel: "3 books." frankly, i'm pretty happy with how it turned out.
+i'm also going to finish another reel before the end of tonight. should be able to sleep @ 3am.
+
+no leetcode today. woohoo
+
+okay, nvm. i'll go ahead and do some leetcode just to continue the streak.
+      `
+    },
     "2025-05-27": {
       content: `pretty shit day overall
 
