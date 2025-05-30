@@ -87,7 +87,11 @@ i'll go ahead and sleep now. it's getting late.
 
 ---
 
+**[wake: 9:34am]**
+
 i want to die.
+
+i need to die.
 
 i'm so tired.
 
@@ -115,7 +119,7 @@ i''m so tired.
 
 it is 12:04pm. i'm going to work on the pytorch course now.
 
-
+![image](https://i.postimg.cc/L4Y5jdGV/image.png)
 
 
 
