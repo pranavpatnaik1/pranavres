@@ -663,8 +663,20 @@ html body .sidebar::-webkit-scrollbar {
 
 /* Update mobile styles */
 @media (max-width: 768px) {
-  .sidebar {
+  /* Force consistent width */
+  body, 
+  .App,
+  .app-container,
+  .sidebar,
+  .content,
+  .selected-entry {
+    min-width: 0;
+    max-width: 100vw;
     width: 100%;
+    overflow-x: hidden;
+  }
+
+  .sidebar {
     height: auto;
     position: relative;
     padding: 16px;
@@ -672,6 +684,7 @@ html body .sidebar::-webkit-scrollbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
   }
 
   .sidebar-header {
@@ -753,13 +766,43 @@ html body .sidebar::-webkit-scrollbar {
   /* Adjust content to account for bottom social bar */
   .content {
     margin-left: 0;
-    padding: 20px;
-    width: 100%;
+    padding: 20px 16px;
     position: relative;
     height: auto;
     top: 0;
     overflow-y: visible;
-    padding-bottom: 60px; /* Make room for social links */
+    padding-bottom: 60px;
+    box-sizing: border-box;
+  }
+
+  .selected-entry {
+    overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .selected-entry p {
+    width: calc(100% - 32px);
+    margin: 16px auto;
+    white-space: normal;
+  }
+
+  .selected-entry pre {
+    max-width: calc(100% - 32px);
+    margin: 16px auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .selected-entry iframe {
+    width: calc(100% - 32px) !important;
+    height: 400px !important;
+    margin: 16px auto;
+    box-sizing: border-box;
   }
 
   .app-container {
