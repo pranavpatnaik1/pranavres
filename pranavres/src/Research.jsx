@@ -29,6 +29,52 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-05-30": {
+      content: `good morning.
+
+it's 1:21am. i'm up-- not for long, though.
+i've found this pytorch course i'd like to go through.
+it's 25 hours long, so i'll be able to go through it over the next few days.
+
+i'm starting to think through new ways to express my content. lately, i've been loving this guy [sachin](https://www.instagram.com/thrift.detective/).
+great posts, great content.
+he's got such a natural way of speaking in his reels it made me realize i've been thinking about all of this completely wrong.
+
+i've been so strung up, almost puppeteering myself in these reels to pump out a version of me (of which exists) that isn't my highest authentic self.
+i need to get better at capturing authenticity and cool ideas.
+been thinking about this a lot lately, so i'll go ahead and move on to the pytorch course now.
+
+i think i'll make a reel about "is it possible to learn ML in 24 hours?"
+something like that should be fun.
+
+besides that, i should be aiming to write papers. that's the main goal.
+to get there, i need to reimplement more.
+here's the todo (in order):
+
+- [ ] pytorch course
+- [ ] reimplemnt papers (word2vec, etc.)
+- [ ] write paperes
+
+the pytorch course shouldn't take longer than 2-3 days of relentless work & focus.
+i'm tired of coming across new ideas & not being able to implement them.
+
+this way, with this pytorch course, i'll be able to cut through ideas like butter.
+here's your mantra:
+
+- make actual progress, then document it.
+
+easy as that. capture raw, unfiltered ideas & thinking. elevate it using your own voice.
+post, polish, repeat.
+
+i'll go ahead and sleep now. it's getting late.
+
+**[sleep: 1:31am]**
+
+---
+
+
+      `
+    },
     "2025-05-29": {
       content: `good morning.
 
