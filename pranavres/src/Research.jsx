@@ -128,7 +128,7 @@ it is 12:04pm. i'm going to work on the pytorch course now.
 
 here's my code for now, figured out how to embed it:
 
-<iframe src="https://nbviewer.org/github/pranavpatnaik1/introToPyTorch/blob/main/introToTensors.ipynb" 
+<iframe src="https://nbviewer.org/github/pranavpatnaik1/introToPyTorch/blob/main/introToTensors.ipynb"
         width="100%" 
         height="600" 
         frameborder="0">

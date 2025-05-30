@@ -923,7 +923,7 @@ html body .sidebar::-webkit-scrollbar {
 /* Add iframe styling */
 .selected-entry iframe {
   width: 90% !important;
-  height: 500px !important;
+  height: 600px !important;
   border: 1px solid #ddd;
   border-radius: 8px;
   margin: 24px auto;
