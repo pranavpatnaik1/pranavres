@@ -135,6 +135,11 @@ here's my code for now, figured out how to embed it:
 </iframe>
 
 this should update as i go along.
+
+(1:45pm) spent the last few minutes working on the embedding portion. now i'm able to show off my code on this website.
+nice.
+
+gonna go work on the next reel now. it's nearly 2 and i haven't posted.
       `
     },
     "2025-05-29": {
