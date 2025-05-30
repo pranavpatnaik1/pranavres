@@ -53,7 +53,7 @@ here's the todo (in order):
 
 - [ ] pytorch course
 - [ ] reimplemnt papers (word2vec, etc.)
-- [ ] write paperes
+- [ ] write papers
 
 the pytorch course shouldn't take longer than 2-3 days of relentless work & focus.
 i'm tired of coming across new ideas & not being able to implement them.
@@ -65,6 +65,21 @@ here's your mantra:
 
 easy as that. capture raw, unfiltered ideas & thinking. elevate it using your own voice.
 post, polish, repeat.
+
+it's also hit me that my ideas are fucking awesome. i'm not just saying that, but it's true.
+bnto made me realize that i need to trust my gut and build shit out before consulting anyone's opinion.
+no one is you. no one is going think like you do.
+
+be quick, build out projects fast, then repeat.
+
+goal:
+
+- [ ] 10 reimplementations
+- [ ] 10 papers
+- [ ] 10 projects
+
+i'll brainstorm more tomorrow about the side projects, but i'm pretty confident i'll make a banger.
+see you then.
 
 i'll go ahead and sleep now. it's getting late.
 
