@@ -3,6 +3,7 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import ReactMarkdown from 'react-markdown';
 import Comments from './components/Comments';
+import rehypeRaw from 'rehype-raw';
 
 function Research() {
   // Format date to display in a readable format
@@ -121,8 +122,19 @@ it is 12:04pm. i'm going to work on the pytorch course now.
 
 ![image](https://i.postimg.cc/L4Y5jdGV/image.png)
 
+(12:39pm) okay. not a fan of the course so far. i'd rather just do the online textbook.
 
+![textbook](https://i.postimg.cc/yx7273gP/image.png)
 
+here's my code for now, figured out how to embed it:
+
+<iframe src="https://nbviewer.org/github/pranavpatnaik1/introToPyTorch/blob/main/introToTensors.ipynb" 
+        width="100%" 
+        height="600" 
+        frameborder="0">
+</iframe>
+
+this should update as i go along.
       `
     },
     "2025-05-29": {
@@ -845,7 +857,9 @@ will post on twitter about the paper in a bit. gonna go play spider-man w/ the f
       {selectedEntry && selectedEntry.content ? (
         <div className="selected-entry">
           <h2>{formatDisplayDate(parseDateString(selectedEntry.date))}</h2>
-          <ReactMarkdown>{selectedEntry.content}</ReactMarkdown>
+          <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+            {selectedEntry.content}
+          </ReactMarkdown>
           <Comments entryDate={selectedEntry.date} />
         </div>
       ) : (

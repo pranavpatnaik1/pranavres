@@ -895,22 +895,39 @@ html body .sidebar::-webkit-scrollbar {
 /* Make consecutive images display side by side */
 .selected-entry p img {
   max-width: 48%;  /* Allow 2 images to fit side by side with some margin */
-  margin: 16px 4px;  /* Increased vertical margin from 4px to 16px */
+  margin: 16px 4px;
   display: inline-block;
   vertical-align: top;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 /* Ensure single images still take full width */
 .selected-entry p:not(:has(img + img)) img {
   max-width: 100%;
-  margin: 24px auto;  /* Increased from 8px to 24px */
+  margin: 24px auto;
   display: block;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 /* Center the paragraph containing images */
 .selected-entry p:has(img) {
   text-align: center;
+}
+
+/* Add iframe styling */
+.selected-entry iframe {
+  width: 90% !important;
+  height: 500px !important;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 24px auto;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
