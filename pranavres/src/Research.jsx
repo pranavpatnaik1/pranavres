@@ -88,6 +88,12 @@ heap / priority queue is a more intuitive concept, so i'll be able to do more wi
 
 ![heap](https://i.postimg.cc/Wb1fM2PQ/image.png)
 
+(4:13pm) taking a break now.
+
+(12:58am) spent the rest of the day working on the word2vec paper & chilling. not much else of worth to mention.
+going to work on. going to switch to tomorrow's entry now.
+
+goodnight.
       `
     },
     "2025-05-28": {
