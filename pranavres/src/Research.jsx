@@ -140,6 +140,47 @@ this should update as i go along.
 nice.
 
 gonna go work on the next reel now. it's nearly 2 and i haven't posted.
+
+(10:21pm) posted the reel. it's doing fairly well. 
+the more i post, the more i realize what matters isn't views, but signal.
+
+![signal](https://i.postimg.cc/gj0GtM2h/image.png)
+
+that's 7 posts in a row. 8 posts if we're counting this "new era" i've been in.
+i think that's my longest streak ever. that's pretty insane to think about.
+
+*never mind*. i've had a longer streak during my exam season period last year. but pretty soon, i'll pass that.
+it's pretty cool to think about. during that period, i was so damn stressed out.
+now, posting's effortless. i'm chilling.
+consistency doesn't even feel difficult.
+
+you just gotta stop thinking about the views so damn much.
+views don't matter. it's the signal the posts send out.
+as ego-driven as it sounds, the current content sends a signal of:
+"wow this guy's really good at this." or "this guy's doing something really cool."
+
+the come-up is slow but steady. consistency is key. and the signal we're putting out is strong.
+i'd rather have 1000 true fans than 100k fake ones.
+with that being said, i'd like to pivot my content to be more jumpy; closer to my personality.
+
+i was writing to my friend sambhav about ways to improve content, and i'll attach them here since i believe them to be important.
+
+![improvements](https://i.postimg.cc/hv7MbnR3/image.png)
+![improvements2](https://i.postimg.cc/mrbgsTLx/image.png)
+![improvements3](https://i.postimg.cc/9Xp36y4f/image.png)
+
+following these should improve my content; the signal i'm putting out.
+i'm not stressed over the "content" part anymore. i'm just going to post whatever i want.
+i don't want to be stuck in a cycle of "optimizing" for views.
+now, i'm just going to post whatever i want and optimize for authenticity.
+
+(1:24am) finished another reel. it'll be up tomorrow @ 12pm.
+very proud of it. can't wait to see how it does.
+gonna do some leetcode now, just a bit to keep the streak going.
+i'm tired as shit, but i wanna get this done and out of the way.
+
+
+
       `
     },
     "2025-05-29": {
