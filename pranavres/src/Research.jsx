@@ -360,7 +360,7 @@ notes from tn:
       `
     },
     "2025-05-27": {
-      content: `pretty shit day overall
+      content: `pretty mid day overall
 
 the reel i posted today didn't do well.
 i suppose that's to be expected since it's rather technical, but it's still disheartening.
@@ -772,7 +772,7 @@ this marks, what, four days of doing nearly nothing? i must be going insane`
 
     },
     "2025-05-19": {
-      content: `woohoo! love it when we have three mid-tier days back-to-back-to-back. the only productive thing i did all day was record a bit on the train and do some yard work. i suppose the long weekend really took it out of me. 
+      content: `woohoo! love it when we have three wacko days back-to-back-to-back. the only productive thing i did all day was record a bit on the train and do some yard work hahaha. i suppose the long weekend really took it out of me. 
 
 got to call my girlfriend a ton today
 
@@ -784,7 +784,7 @@ i'm gonna spend the next hour finishing up this video, then move on to leetcode/
       
     },
     "2025-05-18": {
-      content: `i hopped on linkedin for the first time in ages and i saw one of my boys got a new internship lined up. i'm incredibly happy for them but it made me realize i need to fucking lock in and grab one
+      content: `boom. transformative day.
 
 luckily, i know what to do. more of this and i'll reach my potential
 
