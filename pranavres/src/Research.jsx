@@ -31,7 +31,14 @@ function Research() {
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
     "2025-05-31": {
-      content: `
+      content: `it's a beautiful day.
+
+i'm up early. it's 6:42am. woke up at around
+
+**[wake: 3:50am]**
+
+gonna continue the heaps explanation here.
+
 **heaps / priority queues:**
 
 heaps are merely arrays kept in a special order, of which can represent a tree.
@@ -54,7 +61,7 @@ so, we can access the parent node by using the index of the child node.
 - left child node index: 2i + 1
 - right child node index: 2i + 2
 
-![heap](https://www.hackerearth.com/practice/notes/heaps-and-priority-queues/)
+![heap](https://i.postimg.cc/jdNmTKpd/image.png)
 
 so, all in all, heaps are a pretty simple concept.
 they're just arrays with a strict way of being organized.
