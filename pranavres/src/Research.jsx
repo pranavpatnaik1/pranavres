@@ -69,9 +69,6 @@ they're just arrays with a strict way of being organized.
 
 
 
-
-
-
 `
     },
     "2025-05-30": {
@@ -134,33 +131,11 @@ i'll go ahead and sleep now. it's getting late.
 
 **[wake: 9:34am]**
 
-i want to die.
-
-i need to die.
-
-i'm so tired.
-
-i'm so tired.
-
-i'm so tired.
-
-i'm so tired.
-
 all i want to do is sleep.
 and work.
 nothing else.
 
-i'm so tired.
-
-nothing in my life is going right.
-i'm deeply unhappy.
-i need to work.
-
-i can't do this anymore.
-
-i can't keep going like this.
-
-i''m so tired.
+i'm so pumped.
 
 it is 12:04pm. i'm going to work on the pytorch course now.
 
