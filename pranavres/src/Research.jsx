@@ -30,6 +30,42 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-05-31": {
+      content: `
+**heaps / priority queues:**
+
+heaps are merely arrays kept in a special order, of which can represent a tree.
+the way the array's ordered is typically based on priority, hence the name "priority queue."
+
+there's two types of heaps:
+
+- max heap: parent node is greater than children
+- min heap: parent node is less than children
+
+heaps have a few properties:
+
+- (heap property): parent node is greater than children (max heap) / less than children (min heap)
+- complete binary tree: every level is filled except the last, which is filled from left to right
+
+heaps are typically implemented using arrays.
+so, we can access the parent node by using the index of the child node.
+
+- parent node index: (i - 1) // 2
+- left child node index: 2i + 1
+- right child node index: 2i + 2
+
+![heap](https://www.hackerearth.com/practice/notes/heaps-and-priority-queues/)
+
+so, all in all, heaps are a pretty simple concept.
+they're just arrays with a strict way of being organized.
+
+
+
+
+
+
+`
+    },
     "2025-05-30": {
       content: `good morning.
 
