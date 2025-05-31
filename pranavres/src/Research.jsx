@@ -179,8 +179,18 @@ very proud of it. can't wait to see how it does.
 gonna do some leetcode now, just a bit to keep the streak going.
 i'm tired as shit, but i wanna get this done and out of the way.
 
+(3:56am) jolted awake. i suppose the mere thought of not doing leetcode was too much...
+kidding. i'm gonna go ahead and do some leetcode now.
 
+i'm on the "Push and Pop" lesson in neetcode.
 
+![pushandpop](https://i.postimg.cc/x86pCdPB/image.png)
+
+(4:18am) wow i hate heaps. hahahah i barely understand shit.
+i'll give it some time and thought, then try again later.
+what a strange concept, but it seems simple enough.
+
+i'll try explaining it here (tomorrow)
       `
     },
     "2025-05-29": {
