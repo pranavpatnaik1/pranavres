@@ -33,9 +33,10 @@ function Research() {
     "2025-05-31": {
       content: `it's a beautiful day.
 
-i'm up early. it's 6:42am. woke up at around
-
-**[wake: 3:50am]**
+i'm up early. it's 6:42am.
+<div style="text-align: center;">
+<b><u>[wake: 3:50am]</u></b>
+</div>
 
 gonna continue the heaps explanation here.
 
