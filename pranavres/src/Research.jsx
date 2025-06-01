@@ -30,6 +30,33 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-01": {
+      content: `good morning.
+
+it's 2:18am. i'd like to jot down some more thoughts before i go to sleep.
+reminding myself of my todo:
+
+- [ ] pytorch course
+- [ ] reimplemnt papers (word2vec, etc.)
+- [ ] write papers
+- [ ] leetcode
+- [ ] build projects
+
+also reminding myself of the following goals:
+
+- [ ] 10 reimplementations
+- [ ] 10 papers
+- [ ] 10 projects
+
+before i go to sleep, i'll brainstorm a few project ideas. things i could pump out in a bit.
+my best advice (to myself) to pump out projects is to act like you're in a hackathon.
+you're given a problem, and you have 24 hours to solve it.
+you're allowed to use any resources you want.
+you're allowed to team up with anyone you want (but you're solo hahaha).
+
+i'll go ahead and brainstorm a few project ideas now, then go to sleep.
+      `
+    },
     "2025-05-31": {
       content: `it's a beautiful day.
 
@@ -67,8 +94,15 @@ so, we can access the parent node by using the index of the child node.
 so, all in all, heaps are a pretty simple concept.
 they're just arrays with a strict way of being organized.
 
+---
 
+(12:44am) going to work on a website now.
 
+finished up a bit of the design i had in mind. need to check quality but that's about it.
+will likely facilitate payment via Stripe API, but i'm still not sure if that's what's needed. i'll see.
+
+i'm going to move on to do some leetcode & brainstorm more project ideas later tonight.
+gonna speedrun projects and put them all right here.
 `
     },
     "2025-05-30": {
