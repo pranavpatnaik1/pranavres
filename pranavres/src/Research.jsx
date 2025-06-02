@@ -159,6 +159,69 @@ so, between the "explainer", "project", "mindset", "youtube", "research" videos,
 
 (1:40am) i'm gonna go ahead and get some neetcode done, then head to bed.
 
+current lesson: Heapify.
+
+![heapify](https://i.postimg.cc/NMhsnYNC/image.png)
+
+i can appreciate the amount of work that goes into proving menial things like heapify's time complexity being O(n).
+i'm not going to lie, it's a bit of a pain.
+but in the grand scheme of things, it's not that bad.
+
+moving on to the next chapter: Hashing
+
+more specifically, Hash Usage.
+
+![hashusage](https://i.postimg.cc/pLz5X0gS/image.png)
+
+it's pretty simple.
+i like hearing about the differences in time complexities between different data structures.
+neetcode does a good job of explaining the tradeoffs.
+it's always great to be able to reason about these things.
+
+moving on to Hash Implementation.
+
+![hashimplementation](https://i.postimg.cc/PJZW1tCW/image.png)
+
+i remember why i skipped this.
+needlessly tedious.
+
+here's my notes on hash implementation:
+
+![hashimplementationnotes](https://i.postimg.cc/wMSk9jwS/image.png)
+
+![hashimplementationnotes2](https://i.postimg.cc/PqwvkQgr/image.png)
+
+finally moving on to graphs! so exciting. i love this chapter.
+
+![graphs](https://i.postimg.cc/g2v6sSkW/image.png)
+
+learning more about the different ways to represent graphs was pretty interesting.
+
+- matrix, use (r, c)
+- adjacency matrix
+
+given the graph, we may say an adjacency matrix defines the relationship the graph has w/ is nodes.
+adjMatrix[r][c] = 1 means there exists an edge between node r and node c.
+
+though, this is a waste of space so this implementation tends to never be used.
+
+- adjacency list
+
+this is a much more efficient way of representing a graph.
+it's an actual class implementation, sort of like an n-ary tree.
+
+skipping over Matrix BFS & DFS. these are way too huge to cover here.
+
+i'll attach my notes for graphs here:
+
+![graphsnotes1](https://i.postimg.cc/rF8zzkr4/image.png)
+
+![graphsnotes](https://i.postimg.cc/26FX5vsn/image.png)
+
+
+
+
+
       `
     },
     "2025-05-31": {
