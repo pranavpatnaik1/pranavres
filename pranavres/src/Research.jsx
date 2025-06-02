@@ -30,6 +30,36 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-02": {
+      content: `another day, another grinder.
+
+it's 3:24am. i'm up, as always.
+outlining the next day before it begins.
+
+- [ ] batch record
+- [ ] pytorch course
+- [ ] leetcode
+- [ ] work on projects
+- [ ] reimplement word2vec
+- [ ] brainstorm writing papers
+- [ ] work on cs assignment
+
+i'm incredibly excited for the pytorch course.
+i've got a few ideas in mind for the "project" videos.
+i'm thinking about doing commits, ping, and inkwell.
+inkwell's gonna be a bitch of a project to design, but i'm up for the challenge.
+
+the key idea is to just *finish.* don't just leave it half-assed, finish it the entire way.
+that's the plan.
+
+i'm going to bed now.
+
+<div style="text-align: center;">
+<b><u>[sleep: 4:01am]</u></b>
+</div>
+
+      `
+    },
     "2025-06-01": {
       content: `good morning.
 
