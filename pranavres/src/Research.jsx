@@ -95,6 +95,70 @@ this is what i asked for.
 ![assignments](https://i.postimg.cc/vB8h53cH/image.png)
 
 ![assignments2](https://i.postimg.cc/3xRGhNdN/image.png)
+
+i've still the huge one due on the 15th, but at least i've gotten these smaller ones out of the way.
+
+i spent a large portion of the day thinking about content.
+i've jotted all of my ideas down into this list:
+
+![content](https://i.postimg.cc/qRrzZvK1/image.png)
+
+first, i'll mention that signal > everything.
+it doesn't matter about the views, the comments, the likes, the shares, the saves, etc.
+what matters is the signal the post sends out.
+
+"this guy's doing something cool."
+"this guy's really good at this."
+"this guy's got a cool idea."
+"he's working on something new."
+etc. etc.
+
+moreover, the priority should be to set up long term growth.
+long-term projects, long-term content = long-term community. 
+
+for my own convenience, i've split future content into six categories:
+
+- "explainer" videos
+
+these are videos where i explain a concept in a way that's easy to understand.
+things like "what is a neural network?" or "what is a convolutional neural network?" etc. etc.
+
+- "project" videos
+
+these are videos where i build a project.
+i've got commits, ping, inkwell, and sessions on the list right now.
+excited for inkwell & ping.
+
+- "mindset" videos
+
+these are videos where i talk about my own personal journey.
+i'll be honest, i'm not sure how many of these i'll make.
+it'll come to me as i go along.
+
+- "research" videos
+
+these are videos where i explain papers, or document myself reimplementing them or writing new ones.
+these are totally signal boosters, so i'll be making a lot of them.
+i also love reading & explaining papers, so this should be a lot of fun.
+
+- youtube
+
+i want to make longer form content for youtube.
+content about ML, research, projects i build, and life in general.
+
+- "algorithm attackers"
+
+these are videos that will hit the algorithm no matter what.
+extremely simple and general, but they shouldn't be made too often.
+
+the plan is to make two of these every week or so, hook new people in.
+
+so, between the "explainer", "project", "mindset", "youtube", "research" videos, and the "algorithm attackers", i should be set.
+
+---
+
+(1:40am) i'm gonna go ahead and get some neetcode done, then head to bed.
+
       `
     },
     "2025-05-31": {
