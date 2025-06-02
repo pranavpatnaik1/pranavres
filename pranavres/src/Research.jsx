@@ -91,6 +91,10 @@ this is what i asked for.
 ---
 
 (1:14am) got a few assignments done.
+
+![assignments](https://i.postimg.cc/vB8h53cH/image.png)
+
+![assignments2](https://i.postimg.cc/3xRGhNdN/image.png)
       `
     },
     "2025-05-31": {
