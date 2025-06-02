@@ -74,6 +74,23 @@ projects:
 
 the name of the game is speed. i'd like to pump these out as soon as possible.
 
+---
+
+"if you aren't him today, you'll never be him."
+i've got a pretty specific idea of the person i'd like to become.
+it takes a lot of effort stay on track, but i'm up for the challenge.
+however, whenever i feel like i might be going off that path, i just remind myself of this quote.
+i remind myself that if i'm willing to be him today, then i'm not going to be him for the rest of my life.
+
+so i remind myself whenever it gets hard,
+
+this is what i want.
+
+this is what i asked for.
+
+---
+
+(1:14am) got a few assignments done.
       `
     },
     "2025-05-31": {
