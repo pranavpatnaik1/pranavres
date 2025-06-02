@@ -55,6 +55,25 @@ you're allowed to use any resources you want.
 you're allowed to team up with anyone you want (but you're solo hahaha).
 
 i'll go ahead and brainstorm a few project ideas now, then go to sleep.
+
+**[sleep: 2:40am]**
+
+---
+
+**[wake: 6:30am]**
+
+i'm up.
+
+brainstormed a few project ideas. now it's just time to build.
+
+projects:
+- sessions
+- ping
+- inkwell
+- commits
+
+the name of the game is speed. i'd like to pump these out as soon as possible.
+
       `
     },
     "2025-05-31": {
