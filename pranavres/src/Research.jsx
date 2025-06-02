@@ -188,7 +188,6 @@ needlessly tedious.
 here's my notes on hash implementation:
 
 ![hashimplementationnotes](https://i.postimg.cc/wMSk9jwS/image.png)
-
 ![hashimplementationnotes2](https://i.postimg.cc/PqwvkQgr/image.png)
 
 finally moving on to graphs! so exciting. i love this chapter.
@@ -215,7 +214,6 @@ skipping over Matrix BFS & DFS. these are way too huge to cover here.
 i'll attach my notes for graphs here:
 
 ![graphsnotes1](https://i.postimg.cc/rF8zzkr4/image.png)
-
 ![graphsnotes](https://i.postimg.cc/26FX5vsn/image.png)
 
 
