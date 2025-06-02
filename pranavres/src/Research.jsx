@@ -31,7 +31,7 @@ function Research() {
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
     "2025-06-02": {
-      content: `another day, another grinder.
+      content: `another day.
 
 it's 3:24am. i'm up, as always.
 outlining the next day before it begins.
@@ -57,6 +57,15 @@ i'm going to bed now.
 <div style="text-align: center;">
 <b><u>[sleep: 4:01am]</u></b>
 </div>
+
+---
+
+<div style="text-align: center;">
+<b><u>[wake: 11:52am]</u></b>
+</div>
+
+even if it is summer, i hate waking up late.
+it's better to just sleep early, then wake up  
 
       `
     },
