@@ -95,6 +95,39 @@ can't continue without deadlines. need to study harder.
 going to continue the neetcode course now.
 all about Kadane's Algorithm.
 
+![kadane2](https://i.postimg.cc/6qX2LTzV/image.png)
+
+(11:01pm) absolutely horrific explanation, no exaggeration.
+
+i think i'll have to grab a textbook for this course.
+at the very least, it's a good idea to have a reference.
+
+---
+
+(11:03pm) alright, time to burn the midnight oil with this pytorch course.
+it's what i need to finish before i can really move on with paper reimplementations, unfortunately.
+
+you can see my notes here:
+
+<iframe src="https://nbviewer.org/github/pranavpatnaik1/introToPyTorch/blob/main/introToTensors.ipynb"
+        width="100%" 
+        height="600" 
+        frameborder="0">
+</iframe>
+
+(11:46pm) finished 00. PyTorch Fundamentals. long chapter.
+moving on to 01. PyTorch Workflow Fundamentals.
+
+---
+
+(12:05pm) posted a *mid* reel today. on purpose.
+
+![reel](https://i.postimg.cc/qMjtSZSV/image.png)
+
+i hadn't planned on posting today, but i felt like continuing the streak. i believe that's now 10 days in a row.
+woohoo!
+
+
 
       `
     },
