@@ -65,7 +65,36 @@ i'm going to bed now.
 </div>
 
 even if it is summer, i hate waking up late.
-it's better to just sleep early, then wake up  
+it's better to just sleep early, then wake up at a reasonable time.
+either way, i'm going to go ahead and finish up this new neetcode course.
+
+i'm moving on to the "Advanced Algorithms" course now.
+i haven't done this yet, but i'm excited to see what it's about.
+
+starting off with arrays & Kadane's Algorithm.
+
+![kadane](https://i.postimg.cc/85Qp8MhW/image.png)
+
+---
+
+(10:47pm) need more focus in my life.
+my mind's consistently all over the place.
+
+i'm thinking about so many different things, but that leads me to shallow results.
+i need to just focus on one thing, then go all in.
+
+let's set some tangible goals:
+
+- [ ] 10 reimplementations by Friday
+- [ ] neetcode advanced algorithms course finished by Wednesday
+- [ ] tryinkwell.com MVP finished by Wednesday
+- [ ] cs assignment finished by Friday
+- [ ] pytorch course finished by Thursday
+
+can't continue without deadlines. need to study harder.
+going to continue the neetcode course now.
+all about Kadane's Algorithm.
+
 
       `
     },
