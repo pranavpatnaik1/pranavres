@@ -30,6 +30,32 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-03": {
+      content: `it's 2am.
+
+as always, let's plan out the day.
+
+- [ ] pytorch course
+- [ ] leetcode
+- [ ] work on projects
+- [ ] reimplement word2vec
+- [ ] brainstorm writing papers
+- [ ] work on cs assignment
+
+i'm thinking of commits, ping, and inkwell.
+since the reel yesterday, i've been getting DMs left and right about the projects.
+
+by the end of today, i'd like to finish 01. PyTorch Workflow Fundamentals.
+moreover, i'd like to finish word2vec, then write an article on it.
+i'll also write articles about transformers and diffusion models.
+
+anyway, i'm going to go ahead and get to bed.
+
+<div style="text-align: center;">
+<b><u>[sleep: 2:03am]</u></b>
+</div>
+      `
+    },
     "2025-06-02": {
       content: `another day.
 
@@ -135,11 +161,8 @@ in it, they had a quote from lebron i really liked:
 <b>YOU'RE NOT A WINNER UNTIL YOU WIN AGAIN.</b>
 </div>
 
-been thinking a lot about 
-
-
-
-
+been thinking a lot about that especially as i increase the output & consistency of my work.
+reminds me to just keep going.
       `
     },
     "2025-06-01": {
