@@ -207,7 +207,7 @@ oh man
               <ul>
                 <li><NavLink to="/research" end>research</NavLink></li>
                 <li><NavLink to="/projects">projects</NavLink></li>
-                <li><NavLink to="/writing">writing</NavLink></li>
+                <li><NavLink to="/essays">essays</NavLink></li>
               </ul>
             </div>
             
@@ -242,7 +242,7 @@ oh man
               <Route path="/" element={<Navigate to="/home" />} />
               <Route path="/home" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/writing/*" element={<Writing />} />
+              <Route path="/essays/*" element={<Writing />} />
             </Routes>
           </main>
         </div>

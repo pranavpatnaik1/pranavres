@@ -142,8 +142,8 @@ The best time to start learning in public was yesterday. The second best time is
     return (
       <div className="writing-page">
         <div className="writing-header">
-          <h1>writing</h1>
-          <p>essays, research, breakdowns</p>
+          <h1>essays</h1>
+          <p>writing, research, breakdowns</p>
         </div>
         
         <div className="articles-grid">
