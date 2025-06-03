@@ -832,6 +832,32 @@ html body .sidebar::-webkit-scrollbar {
     padding: 16px;
     margin-bottom: 16px;
   }
+
+  .article-card {
+    flex-direction: column;
+    min-height: auto;
+    height: auto;
+  }
+  
+  .article-card-thumbnail {
+    display: none;  /* Hide thumbnails on mobile */
+  }
+  
+  .article-card-content {
+    padding: 24px;
+  }
+
+  .article-subtitle {
+    margin-bottom: 16px;  /* Increase space between subtitle and date */
+  }
+  
+  .writing-header {
+    margin-bottom: 30px;  /* Slightly reduce header margin on mobile */
+  }
+  
+  .articles-grid {
+    gap: 16px;  /* Slightly increase gap between cards */
+  }
 }
 
 /* Small mobile devices */
@@ -1191,16 +1217,27 @@ html body .sidebar::-webkit-scrollbar {
   .article-card {
     flex-direction: column;
     min-height: auto;
+    height: auto;
   }
   
   .article-card-thumbnail {
-    width: 100%;
-    height: 200px;
-    border-radius: 12px 12px 0 0;
+    display: none;  /* Hide thumbnails on mobile */
   }
   
   .article-card-content {
-    padding: 20px;
+    padding: 24px;
+  }
+
+  .article-subtitle {
+    margin-bottom: 16px;  /* Increase space between subtitle and date */
+  }
+  
+  .writing-header {
+    margin-bottom: 30px;  /* Slightly reduce header margin on mobile */
+  }
+  
+  .articles-grid {
+    gap: 16px;  /* Slightly increase gap between cards */
   }
 }
 
