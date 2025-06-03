@@ -127,6 +127,17 @@ moving on to 01. PyTorch Workflow Fundamentals.
 i hadn't planned on posting today, but i felt like continuing the streak. i believe that's now 10 days in a row.
 woohoo!
 
+(12:47am) was reading a blog from paul graham (or whoever it was) earlier today.
+
+in it, they had a quote from lebron i really liked: 
+
+<div style="text-align: center;">
+<b>YOU'RE NOT A WINNER UNTIL YOU WIN AGAIN.</b>
+</div>
+
+been thinking a lot about 
+
+
 
 
       `

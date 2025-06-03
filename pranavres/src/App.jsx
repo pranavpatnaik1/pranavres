@@ -242,7 +242,7 @@ oh man
               <Route path="/" element={<Navigate to="/home" />} />
               <Route path="/home" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/writing" element={<Writing />} />
+              <Route path="/writing/*" element={<Writing />} />
             </Routes>
           </main>
         </div>
