@@ -54,6 +54,43 @@ anyway, i'm going to go ahead and get to bed.
 <div style="text-align: center;">
 <b><u>[sleep: 2:03am]</u></b>
 </div>
+
+---
+
+<div style="text-align: center;">
+<b><u>[wake: 6:12am]</u></b>
+</div>
+
+i'm up.
+gotta love early mornings.
+
+going to work on the pytorch course now.
+
+here's my code for reference:
+
+<iframe src="https://nbviewer.org/github/pranavpatnaik1/introToPyTorch/blob/main/pytorchWorkflow.ipynb"
+        width="100%" 
+        height="600" 
+        frameborder="0">
+</iframe>
+
+---
+
+(1:28am) good day.
+i'm really proud of the fact i got a reel out today, and it's one i'm actually proud of.
+moreover, it's doing really well.
+1.5k views in an hour @ 1am, and steadily growing.
+i appreciate the immense support, i never take it for granted.
+
+![resnet](https://i.postimg.cc/W4m0qYzV/image.png)
+
+i'll go to sleep now. i'd rather wake up early tomorrow, to get a head start on the day and work harder.
+
+<div style="text-align: center;">
+<b><u>[sleep: 1:31am]</u></b>
+</div>
+
+great work today.
       `
     },
     "2025-06-02": {
