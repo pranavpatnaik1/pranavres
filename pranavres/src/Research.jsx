@@ -94,7 +94,7 @@ so tomorrow, more projects. i promise.
 
 for now, i'm going to bed.
 
-div style="text-align: center;">
+<div style="text-align: center;">
 <b><u>[sleep: 1:50am]</u></b>
 </div>
 `
