@@ -30,6 +30,71 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-04": {
+      content: `woke up early.
+
+<div style="text-align: center;">
+<b><u>[wake: 6:18am]</u></b>
+</div>
+
+i'm up.
+reading "Advanced Data Structures Using 'C'" from the Sikkim Manipal University.
+it's so old i'm guessing my father used it when he was in college.
+old is gold, i suppose, since i'm actually learning a lot from it.
+
+(1:26pm) just got home, working on the pytorch course now.
+
+here's my code for reference:
+
+<iframe src="https://nbviewer.org/github/pranavpatnaik1/introToPyTorch/blob/main/pytorchWorkflow.ipynb"
+        width="100%" 
+        height="600" 
+        frameborder="0">
+</iframe>
+
+---
+
+(2:03pm) finished up some neetcode, watched 7 solved problems.
+i'm really getting the hang of it now.
+the more videos i watch, the faster i can do them, even before he explains the optimal solutions.
+
+when effort meets consistency, magic happens.
+i'll spend the rest of the day batch recording.
+
+---
+
+(1:20am) isn't it crazy how time just flies?
+i need to get a better grasp on the things i do.
+writing more thoughts down is a good sport.
+i'd like to get more articles out, and plan out some more videos.
+
+speaking of, i recorded a couple of videos today.
+
+![reel](https://i.postimg.cc/50M4jzQy/image.png)
+
+posted a new one, it's doing fairly well. it's one of my favorites as well.
+i'm happy with these new string of videos recently.
+gotta up the ante, though.
+
+more storytelling, less "speaking" videos.
+more importantly, more work done hahaha.
+
+that makes me think-- i need to be doing more work where i can take a step back and say "i made progress."
+rather than just "i finished x problems" or "i finished y chapters."
+i'm obviously alluding to the projects i'm working on.
+
+i'm thinking about commits, ping, and inkwell.
+i made a video explaining "bases" earlier today, of which i'm pretty sure will turn out decent.
+what i liked about those projects is i made such tangible progress.
+but the thing is, seemingly "tangible progress" is often what makes you "feel good."
+
+i've come to realize that i need to be doing more work that's actually "tangible."
+although most progress comes in the form of the grind, i'll be damned if i'm not going to be doing more work that i can look back on and say "i did that."
+so tomorrow, more projects. i promise.
+
+for now, i'm going to bed.
+`
+    },
     "2025-06-03": {
       content: `it's 2am.
 
