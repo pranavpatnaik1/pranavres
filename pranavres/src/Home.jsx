@@ -31,8 +31,8 @@ export default function Home() {
           </p>
         </div>
         <img 
-          src={null}
-          alt="" 
+          src="/pfpwebsite.png"
+          alt="Pranav Patnaik" 
           className="home-image"
         />
       </div>

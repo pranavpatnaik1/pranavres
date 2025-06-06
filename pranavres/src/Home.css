@@ -37,8 +37,9 @@
   border-radius: 150px;
   object-fit: cover;
   opacity: 0;
-  color: #ae000000;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0);
+  animation: fadeIn 0.5s ease forwards;
+  animation-delay: 0.9s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .home-container p {
@@ -76,6 +77,12 @@
   }
 }
 
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 /* This ensures only the home page doesn't scroll on desktop */
 @media (min-width: 769px) {
   body.home-page .content {
@@ -92,28 +99,38 @@
   .home-container {
     font-size: 1.1em;
     padding: 20px;
-    height: auto; /* Allow content to determine height */
+    height: auto;
     min-height: 100vh;
     justify-content: flex-start;
     padding-top: 40px;
-    overflow: visible; /* Allow scrolling on mobile */
   }
 
   .home-content {
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
   }
 
   .home-image {
-    display: none;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1;
+    margin: 0 auto;
+    border-radius: 50%;
   }
 
   .home-text {
     text-align: left;
   }
 
+  .home-text p {
+    margin-bottom: 1em;
+  }
+
   .home-greeting {
-    font-size: 1.4em;
+    font-size: 1.6em;
+    margin-bottom: 1.2em;
   }
 }
 
@@ -122,14 +139,22 @@
   .home-container {
     font-size: 1em;
     padding: 16px;
-    padding-top: 32px;
+    padding-top: 30px;
+  }
+
+  .home-image {
+    max-width: 250px;
   }
 
   .home-greeting {
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 
   .home-text {
-    padding: 0 8px;
+    padding: 0;
+  }
+
+  .home-text p {
+    margin-bottom: 0.8em;
   }
 } 
