@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
-import { Routes, Route, useNavigate, useParams } from 'react-router-dom';
+import { Routes, Route, useNavigate, useParams, Navigate } from 'react-router-dom';
 
 export default function Writing() {
   // Sample writing entries with titles, subtitles, and banner images
@@ -151,7 +151,8 @@ The best time to start learning in public was yesterday. The second best time is
             <div 
               key={article.slug}
               className="article-card"
-              onClick={() => navigate(`/writing/${article.slug}`)}
+              onClick={() => navigate(`/essays/${article.slug}`)}
+              style={{ cursor: 'pointer' }}
             >
               <div className="article-card-content">
                 <h2>{article.title}</h2>
@@ -175,10 +176,9 @@ The best time to start learning in public was yesterday. The second best time is
   function Article() {
     const { slug } = useParams();
     const article = writingEntries[slug];
-    const navigate = useNavigate();
     
     if (!article) {
-      return <Navigate to="/writing" />;
+      return <Navigate to="/essays" />;
     }
 
     return (
