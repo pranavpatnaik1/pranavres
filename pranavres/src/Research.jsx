@@ -30,6 +30,38 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-05": {
+      content: `it's 1:08am.
+
+but it's june 6th. need to be more consistent with these posts.
+pretty slow day overall, spent it meandering and working on videos.
+
+i'm having way too much fun with these videos hahaha.
+i put out a new one today on "bases."
+i'm pretty sure it's one of my better videos.
+
+![bases](https://i.postimg.cc/5tmKVMLm/image.png)
+
+how do you know if something's a waste of time?
+i'm not sure.
+all i know is that i'm having fun making these videos.
+every day, just a little bit more work done.
+
+i'm making a video on "inkwell" tomorrow, editing it as i write this.
+i'm such an impatient person, it's tough to record and work at the same time, but i'll keep working at it since this is what i want to do.
+
+documenting my progress is key.
+things won't happen overnight, but i'll keep working at it.
+lately it feels like i'm just going through the motions, like i'm running through a tunnel with no light at the end of it.
+where is the light?
+where is the end of the tunnel?
+
+i don't know, but i'll keep working at it.
+i'll keep running.
+
+that's all i can do.
+      `
+    },
     "2025-06-04": {
       content: `woke up early.
 
