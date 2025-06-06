@@ -138,6 +138,16 @@ The best time to start learning in public was yesterday. The second best time is
 
   function ArticleList() {
     const articles = getAllArticles();
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    React.useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+      };
+
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
     
     return (
       <div className="writing-page">
@@ -163,9 +173,11 @@ The best time to start learning in public was yesterday. The second best time is
                   day: 'numeric' 
                 })}</span>
               </div>
-              <div className="article-card-thumbnail">
-                <img src={article.banner} alt={article.title} />
-              </div>
+              {!isMobile && (
+                <div className="article-card-thumbnail">
+                  <img src={article.banner} alt={article.title} />
+                </div>
+              )}
             </div>
           ))}
         </div>
