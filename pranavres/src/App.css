@@ -860,6 +860,7 @@ html body .sidebar::-webkit-scrollbar {
   }
 }
 
+
 /* Small mobile devices */
 @media (max-width: 480px) {
   .content {
@@ -1049,7 +1050,7 @@ html body .sidebar::-webkit-scrollbar {
   animation-delay: calc(0.1s * var(--card-index, 0));
   display: flex;
   align-items: stretch;  /* Change from center to stretch */
-  height: 160px;  /* Set fixed height */
+  height: 120px;  /* Reduced height */
 }
 
 .article-card:hover {
@@ -1062,15 +1063,15 @@ html body .sidebar::-webkit-scrollbar {
 
 .article-card-content {
   flex: 1;
-  padding: 24px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .article-card-thumbnail {
-  width: 160px;  /* Match the card height */
-  height: 160px;  /* Match the card height */
+  width: 120px;  /* Match the new card height */
+  height: 120px;  /* Match the new card height */
   flex-shrink: 0;
   border-radius: 0 12px 12px 0;
   overflow: hidden;
@@ -1084,19 +1085,19 @@ html body .sidebar::-webkit-scrollbar {
 
 .article-card h2 {
   color: #333;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 600;
-  margin-bottom: 4px;
-  line-height: 1.3;
+  margin-bottom: 2px;
+  line-height: 1.2;
   text-transform: lowercase;
   letter-spacing: -0.02em;
 }
 
 .article-subtitle {
   color: #666;
-  font-size: 1em;
-  margin-bottom: 12px;
-  line-height: 1.4;
+  font-size: 0.9em;
+  margin-bottom: 8px;
+  line-height: 1.3;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
@@ -1218,6 +1219,7 @@ html body .sidebar::-webkit-scrollbar {
     flex-direction: column;
     min-height: auto;
     height: auto;
+    padding: 12px 16px;
   }
   
   .article-card-thumbnail {
@@ -1225,11 +1227,16 @@ html body .sidebar::-webkit-scrollbar {
   }
   
   .article-card-content {
-    padding: 24px;
+    padding: 0;
   }
 
   .article-subtitle {
-    margin-bottom: 16px;  /* Increase space between subtitle and date */
+    margin-bottom: 8px;
+    font-size: 0.85em;
+  }
+
+  .article-card h2 {
+    font-size: 1.1em;
   }
   
   .writing-header {
