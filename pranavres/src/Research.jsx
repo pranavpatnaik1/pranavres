@@ -30,6 +30,47 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-07": {
+      content: `isn't it crazy how time just flies?
+
+it's *june.* not sure how i feel about that.
+half the year's over, have you made progress?
+i feel like i certainly have, but i'm not sure if i've made enough.
+i supppose that's a good feeling to have.
+more to come.
+
+let's talk about what i'll do today since i've planned it out. it's 2:11am.
+
+- [ ] finish up assignments
+
+this is due on the 16th. get it done.
+
+- [ ] finish up ML projects
+
+gotta have a backlog of projects we've been working on. compile everything we've done into a nice github repo.
+
+- [ ] update "essays" section of website
+
+write a few essays, jot down your thoughts, then upload them to the website.
+
+- [ ] work on word2vec
+
+i'm thinking about doing a video on it. how this is extremely simple.
+it's merely the pytorvh that's throwing me off. this course isn't much help, it's extremely memorization focused.
+might have to grab a textbook for this one.
+
+we'll see.
+either day, i'm going to bed now.
+
+<div style="text-align: center;">
+<b><u>[sleep: 2:13am]</u></b>
+</div>
+
+---
+
+
+      `
+    },
     "2025-06-06": {
       content: `what a day.
 
