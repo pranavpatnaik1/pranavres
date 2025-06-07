@@ -30,6 +30,43 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-06": {
+      content: `what a day.
+
+it's 1:52am, on the 7th of june. i'll write about the day.
+i love posting content about ML.
+consistent output is key.
+the growth is consistent as well.
+
+i need to be more powerful with the output, as well as the things i do.
+today was a good day despite it not being a productive one.
+i don't mind if i have days like these within sparseness, but i need to be in a hub of lockdown.
+nonetheless, i enjoyed today.
+
+posted a new reel on papers i'd recommend to beginners. fairly happy with it.
+
+![reel](https://i.postimg.cc/c4nB2jsT/image.png)
+
+tomorrow, priority #1 is to finish more of those miscellaneous ML projects i was thinking about earlier today.
+moreover, finish up assignments. i've got one due on the 16th. i'd like to get it done sooner than later, then check up w/ TAs.
+
+a late wakeup time completely fucks over the day.
+i can't understand how anyone wakes up @ 12pm and is able to be motivated enough to do anything else besides slog around.
+to each their own, but i'm not sure i'll ever be able to do that.
+i'll also update the "essays" section of the website with my own essays.
+
+- [ ] finish up assignments
+- [ ] finish up ML projects
+- [ ] update "essays" section of website
+- [ ] work on word2vec
+
+if you know me and you're reading this, feel free to reach out and see whether i've finished these by tomorrow, june 7th (that's today, by the time i'm writing this).
+either way, i'm going to go ahead and get to bed.
+
+<div style="text-align: center;">
+<b><u>[sleep: 2:06am]</u></b>
+      `
+    },
     "2025-06-05": {
       content: `it's 1:08am.
 
