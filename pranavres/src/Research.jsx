@@ -63,6 +63,14 @@ i'll also update the "essays" section of the website with my own essays.
 if you know me and you're reading this, feel free to reach out and see whether i've finished these by tomorrow, june 7th (that's today, by the time i'm writing this).
 either way, i'm going to go ahead and get to bed.
 
+one more thing before i leave to bed: the more i post, the more i realize how true this quote is:
+"when you want something, the universe conspires in helping you achieve it."
+ever since i started being more upfront in my posts, i've been getting non-stop support.
+i'm extremely grateful for the support, and i'll never take it for granted.
+it only pushes me to do more.
+
+going to bed now. 
+
 <div style="text-align: center;">
 <b><u>[sleep: 2:06am]</u></b>
       `
