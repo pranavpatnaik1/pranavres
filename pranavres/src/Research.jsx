@@ -36,7 +36,7 @@ function Research() {
 it's *june.* not sure how i feel about that.
 half the year's over, have you made progress?
 i feel like i certainly have, but i'm not sure if i've made enough.
-i supppose that's a good feeling to have.
+i suppose that's a good feeling to have.
 more to come.
 
 let's talk about what i'll do today since i've planned it out. it's 2:11am.
@@ -68,7 +68,23 @@ either day, i'm going to bed now.
 
 ---
 
+<div style="text-align: center;">
+<b><u>[wake: 6:23am]</u></b>
+</div>
 
+(1:21pm) working on leetcode now.
+
+31. Next Permutation
+
+left it midway. going to record now.
+got a great idea for a reel (AI imgs).
+
+(1:37am) finished a new reel on embeddings. pretty happy with it.
+going to sleep now. pretty nothing-burger day as far as productivity goes.
+
+<div style="text-align: center;">
+<b><u>[sleep: 1:37am]</u></b>
+</div>
       `
     },
     "2025-06-06": {
