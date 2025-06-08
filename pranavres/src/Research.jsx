@@ -30,6 +30,23 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-08": {
+      content: `working on an assignment now.
+
+it's 9:58am. woke up at 6:23am.
+i've been reading the biography of Nikola Tesla,
+it's a good read.
+i usually spend the first hour of my day reading, without my phone.
+i can't deal with the agitation of it all.
+
+the notifications, the constant barrage of information-- it's too much for a brain that's still mush.
+besides that, i'll have to work on this assignment. it's due on the 15th,
+and office hours for it begin on the 11th.
+
+(2:14pm) the moment i typed that out about 12 calls came in in a row.
+now sitting down for assignment time.
+      `
+    },
     "2025-06-07": {
       content: `isn't it crazy how time just flies?
 
