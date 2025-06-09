@@ -41,9 +41,38 @@ most of the assignment resides in task 3, of which i'll finish tomorrow.
 (1:04am) i've officially finished tasks 1 & 2. need to test some more but i'll be able to do that tomorrow. feeling happy with current results.
 going to bed now.
 
+(1:09am) never mind. i'm going to write some articles.
+
+(1:48am) finished three articles: diffusion models, embeddings, and transformers.
+i'm fairly happy with them, especially the embeddings one.
+
+the goal is to write as many articles as possible.
+hopefully i'll be able to send these out and grab attention using them.
+creating a huge backlog of articles is key.
+i'll aim for 5 before i go to sleep.
+that means two more.
+let's do it!
+
+(2:50am) finished the fifth article. pretty damn happy with it.
+going to sleep now.
+
+
 <div style="text-align: center;">
-<b><u>[sleep: 1:05am]</u></b>
+<b><u>[sleep: 2:51am]</u></b>
 </div>
+
+---
+
+<div style="text-align: center;">
+<b><u>[wake: 10:30am]</u></b>
+</div>
+
+(12:32pm) while my mouth still tastes like toast, i'm going to work on the assignment now.
+
+
+
+
+
 `
     },
     "2025-06-08": {
