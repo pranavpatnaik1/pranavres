@@ -34,7 +34,16 @@ function Research() {
       content: `it's 12:40am.
 
 working on the assignment now, i'd like to get a siazble chunk of it done before the 11th.
+i'm pretty much finished with task 1, it was rather straightforward.
+i'll finish task 2 then head to bed.
+most of the assignment resides in task 3, of which i'll finish tomorrow.
 
+(1:04am) i've officially finished tasks 1 & 2. need to test some more but i'll be able to do that tomorrow. feeling happy with current results.
+going to bed now.
+
+<div style="text-align: center;">
+<b><u>[sleep: 1:05am]</u></b>
+</div>
 `
     },
     "2025-06-08": {
