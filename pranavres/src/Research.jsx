@@ -30,6 +30,13 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-09": {
+      content: `it's 12:40am.
+
+working on the assignment now, i'd like to get a siazble chunk of it done before the 11th.
+
+`
+    },
     "2025-06-08": {
       content: `working on an assignment now.
 
