@@ -30,6 +30,56 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-11": {
+      content: `great day.
+
+the reel on akinator blew up. i'm pretty happy about that.
+it seems like my hard work and consistency is paying off, and it's starting to show.
+i can't take any moment for granted and i can't slow down, especially not now.
+spent the last bit working on a website.
+
+i'm fairly happy with it, but i'll see in the morning i suppose.
+
+![website](https://i.postimg.cc/W4npyMFP/Reshmi-Ravi.png)
+
+either way, i'm proud of myself for grinding that out.
+i think it looks cool.
+i watched mission impossible: final reckoning earlier today.
+fucking banger, what else can i say?
+so much so that i recorded a reel right after.
+
+![MI](https://i.postimg.cc/bv0nyCrD/image.png)
+
+amongst the incredible action, set-pieces, and pretty great story, i'm fairly certain it's the best movie of the year, no doubt.
+but besides that, there was a scene at the end that really stuck out to me.
+luther begins a monologue in a recording to hunt, where in the middle of a pretty great neat bow to the mission impossible series, he mentions this:
+
+<div style="text-align: center;">
+<b><u>"any hope for a better future comes from willing that future into being"</u></b>
+</div>
+
+i'm not going to go ahead to launch into a think piece right here and now, but i'll say this:
+mission: impossible, as crazy as it sounds, made me rethink life.
+how much of my own choices have been made out of protecting myself?
+out of doing the "reasonable" thing?
+choosing what's smart over what i actually wanted?
+
+discipline doesn't just mean balance, it also means intensity.
+you can't half-ass your way into something that matters.
+you have to be all-in.
+watching the submarine & plane sequences made me realize how much i've been holding myself back.
+i suppose that's what tom cruise wanted: for audiences to realize the human potential.
+
+fascinating.
+
+i'm going to go ahead and get to bed now.
+i'll log back in tomorrow.
+
+<div style="text-align: center;">
+<b><u>[sleep: 3:42am]</u></b>
+</div>
+      `
+    },
     "2025-06-09": {
       content: `it's 12:40am.
 
