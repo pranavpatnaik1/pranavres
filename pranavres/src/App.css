@@ -141,9 +141,11 @@ hr {
 }
 
 .sidebar ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
-  margin-bottom: 20px;
+  margin: 0;
+  display: flex;
+  gap: 10px;
 }
 
 .sidebar li {
@@ -813,7 +815,7 @@ html body .sidebar::-webkit-scrollbar {
   .sidebar-links ul {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 8px;
     margin: 0;
     padding: 0;
     align-items: center; /* Align with header text */
@@ -1022,7 +1024,7 @@ html body .sidebar::-webkit-scrollbar {
   }
 
   .sidebar-links ul {
-    gap: 12px;
+    gap: 6px;
   }
 
   .social-links {

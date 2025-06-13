@@ -8,6 +8,7 @@ import ReactMarkdown from 'react-markdown';
 import Home from './Home';
 import Research from './Research';
 import Projects from './Projects';
+import Resume from './Resume';
 
 function App() {
   // Format date to display in a readable format
@@ -208,6 +209,7 @@ oh man
                 <li><NavLink to="/research" end>research</NavLink></li>
                 <li><NavLink to="/projects">projects</NavLink></li>
                 <li><NavLink to="/essays">essays</NavLink></li>
+                <li><NavLink to="/resume">cv</NavLink></li>
               </ul>
             </div>
             
@@ -243,6 +245,7 @@ oh man
               <Route path="/home" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/essays/*" element={<Writing />} />
+              <Route path="/resume" element={<Resume />} />
             </Routes>
           </main>
         </div>
