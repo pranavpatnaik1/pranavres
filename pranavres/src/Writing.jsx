@@ -141,8 +141,6 @@ this gives 1 for perfect match, 0 for orthogonal (unrelated), -1 for total oppos
 
 you can also use euclidean distance if you care more about magnitude.
 
----
-
 ## tldr
 
 embeddings are how models turn messy real-world input into structured, meaningful geometry.
