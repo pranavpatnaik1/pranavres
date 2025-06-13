@@ -9,6 +9,7 @@ import Home from './Home';
 import Research from './Research';
 import Projects from './Projects';
 import Resume from './Resume';
+import Roadmap from './Roadmap';
 
 function App() {
   // Format date to display in a readable format
@@ -246,6 +247,7 @@ oh man
               <Route path="/projects" element={<Projects />} />
               <Route path="/essays/*" element={<Writing />} />
               <Route path="/resume" element={<Resume />} />
+              <Route path="/ml-roadmap" element={<Roadmap />} />
             </Routes>
           </main>
         </div>
