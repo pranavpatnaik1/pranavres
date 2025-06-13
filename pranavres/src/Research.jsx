@@ -30,6 +30,45 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-13": {
+      content: `here's the idea.
+
+- [ ] finish up assignment *
+- [ ] work on inkwell, ping
+- [ ] read papers
+- [ ] leetcode
+- [ ] post on twitter
+- [ ] batch record
+
+the assignment is top priority, so i'll work on that.
+i'd like to pivot this portion of the website to discuss more research, so that'll motivate me to get to work, rather than just posting unfiltered thoughts.
+i'll also be writing more articles, and posting them on the website.
+
+looking forward to it.
+
+<div style="text-align: center;">
+<b><u>[sleep: 2:53am]</u></b>
+</div>
+      `
+    },
+    "2025-06-12": {
+      content: `average day.
+
+it's 2:44am on the 13th. i still haven't finished the assignment due on the 16th.
+that's got me pulling my hairs at the moment, but i'll get it done.
+i had GPT write out a full list of "must-know" concepts in ML and for the few i'm not quite familiar with, i'll dedicate my time to learning them.
+besides that, i'd like to get to work on inkwell.
+in fact, i'll work on that tonight.
+i'll hop on figma and design the site.
+
+besides that, i posted a new reel earlier today.
+
+![reel](https://i.postimg.cc/SNKQg6hH/image.png)
+
+fairly happy with it. i'm enjoying the process of making these videos.
+will get back into the swing of things as far as research/work goes tomorrow.
+      `
+    },
     "2025-06-11": {
       content: `great day.
 
