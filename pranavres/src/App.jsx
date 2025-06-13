@@ -209,7 +209,7 @@ oh man
                 <li><NavLink to="/research" end>research</NavLink></li>
                 <li><NavLink to="/projects">projects</NavLink></li>
                 <li><NavLink to="/essays">essays</NavLink></li>
-                <li><NavLink to="/resume">cv</NavLink></li>
+                <li><NavLink to="/resume">resume</NavLink></li>
               </ul>
             </div>
             
