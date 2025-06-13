@@ -137,12 +137,21 @@ most common: **cosine similarity**
 
 ![cosine similarity](https://i.postimg.cc/ZRKzHRvZ/image.png)
 
-
 this gives 1 for perfect match, 0 for orthogonal (unrelated), -1 for total opposites.
 
-you can also use euclidean distance if you care more about magnitude. 
+you can also use euclidean distance if you care more about magnitude.
 
+---
 
+## tldr
+
+embeddings are how models turn messy real-world input into structured, meaningful geometry.
+
+- they're the first step in most AI pipelines
+- they encode similarity as distance
+- they power everything from search engines to multimodal AI
+
+and if you're building something that needs to understand or compare data -- you're probably going to need them.
 `
     },
     "transformers": {
