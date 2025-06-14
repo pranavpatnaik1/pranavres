@@ -40,7 +40,10 @@ going to do further testing, later today but for now, i'm fairly happy with it.
 i wrote a new article on contrastive learning. you can check it out [here](https://pranavpatnaik.com/writing/contrastive-learning).
 i still need to figure out formatting on mobile. for now, it's great.
 
+i've updated the site once more to include my guide to studying ML for the forseeable future. i'd like to dedicate the next few days to working on finishing it up.
+you can check it out [here](https://pranavpatnaik.com/must-know) under /must-know.
 
+(12:43pm) it's lunch time. when i return i'll study via the must-know document. 
       `
     },
     "2025-06-13": {
