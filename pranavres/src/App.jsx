@@ -10,6 +10,7 @@ import Research from './Research';
 import Projects from './Projects';
 import Resume from './Resume';
 import Roadmap from './Roadmap';
+import MustKnow from './MustKnow';
 
 function App() {
   // Format date to display in a readable format
@@ -248,6 +249,7 @@ oh man
               <Route path="/essays/*" element={<Writing />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/ml-roadmap" element={<Roadmap />} />
+              <Route path="/must-know" element={<MustKnow />} />
             </Routes>
           </main>
         </div>

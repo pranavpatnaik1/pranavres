@@ -33,6 +33,16 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-14": {
+      content: `finished the assignment.
+
+going to do further testing, later today but for now, i'm fairly happy with it.
+i wrote a new article on contrastive learning. you can check it out [here](https://pranavpatnaik.com/writing/contrastive-learning).
+i still need to figure out formatting on mobile. for now, it's great.
+
+
+      `
+    },
     "2025-06-13": {
       content: `here's the idea.
 
