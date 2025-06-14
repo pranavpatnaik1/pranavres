@@ -698,18 +698,19 @@ html body .sidebar::-webkit-scrollbar {
   }
 
   .content {
-    margin-left: 0;
+    margin: 0 16px;
     padding: 16px;
     position: relative;
     height: auto;
     top: 0;
     overflow-y: visible;
     padding-bottom: 60px;
+    box-sizing: border-box;
   }
 
   .selected-entry {
-    padding: 0 16px;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
     max-width: 100%;
     font-size: 16px;
     line-height: 1.6;
@@ -740,7 +741,8 @@ html body .sidebar::-webkit-scrollbar {
   .comments-section {
     margin: 40px 16px 0;
     padding-top: 20px;
-    width: auto;
+    width: calc(100% - 32px);
+    box-sizing: border-box;
   }
 
   .comment-form {
@@ -985,6 +987,30 @@ html body .sidebar::-webkit-scrollbar {
     padding: 0;  /* Remove padding for image containers */
     margin: 16px auto;
   }
+
+  .selected-entry .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.5em 16px;
+    margin: 0.5em -16px;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100vw;
+  }
+
+  .selected-entry .katex-display > .katex {
+    font-size: 1.1em !important;
+    display: inline-block;
+    min-width: min-content;
+    padding: 0;
+  }
+
+  .selected-entry .katex-html {
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+  }
 }
 
 
@@ -1044,6 +1070,15 @@ html body .sidebar::-webkit-scrollbar {
   .blog-post p,
   .article-content p {
     padding: 0 12px;
+  }
+
+  .selected-entry .katex-display {
+    padding: 0.5em 12px;
+    margin: 0.5em -12px;
+  }
+
+  .selected-entry .katex-display > .katex {
+    font-size: 0.95em !important;
   }
 }
 
@@ -1241,7 +1276,7 @@ html body .sidebar::-webkit-scrollbar {
 }
 
 .article-date {
-  color: #ffffff;
+  color: #666;
   font-size: 0.9em;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -1297,6 +1332,7 @@ html body .sidebar::-webkit-scrollbar {
 .article-banner-overlay .article-date {
   font-size: 0.9em;
   opacity: 0.8;
+  color: #ffffff;
 }
 
 .article-content {
@@ -1386,5 +1422,13 @@ html body .sidebar::-webkit-scrollbar {
   .articles-grid {
     gap: 16px;  /* Slightly increase gap between cards */
   }
+}
+
+.article-card .article-date {
+  color: #666;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  opacity: 0.9;
 }
 

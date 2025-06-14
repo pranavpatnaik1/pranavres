@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import { Routes, Route, useNavigate, useParams, Navigate } from 'react-router-dom';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 
 export default function Writing() {
   // Sample writing entries with titles, subtitles, and banner images
@@ -622,7 +625,140 @@ retrieval-augmented generation is how you make LLMs actually useful for real-wor
 
 if you're building anything with an LLM and a data source -- you're probably gonna want to use RAG.
 `},
+    "contrastive-learning": {
+      title: "contrastive learning",
+      subtitle: "explained like you're a 5 y/o",
+      banner: "https://i.postimg.cc/vTdK9SHZ/triplet-loss.png",
+      date: "2025-06-14",
+      content: `
 
+a lot of modern models aren't trained to classify or generate — they're trained to **compare**.
+
+that's the core idea of contrastive learning:
+
+> bring similar things closer, push different things apart.
+
+it's how models learn really useful embeddings — especially for search, retrieval, and matching tasks. if you've worked with CLIP, sentence-transformers, DINOv2, or anything involving semantic similarity, contrastive learning is probably under the hood.
+
+## what is contrastive learning?
+
+instead of telling a model "this is a cat" or "this is a dog", you show it **pairs**:
+
+- ("a cat sitting on a couch", image of a cat on a couch)
+- ("a dog in a park", image of a dog in a park)
+
+you pass both sides through encoders:
+
+- a text encoder
+- an image encoder
+
+and you teach the model:
+
+- matching pairs should be **close together** in embedding space
+- non-matching pairs should be **far apart**
+
+no class labels. no supervision beyond which things go together.
+
+## how does the model learn that?
+
+with a loss function designed to reshape the space.
+
+### 1. contrastive loss (basic form)
+
+used in SimCLR and similar setups. for a given anchor $a$ and positive $b$:
+
+$$
+L = -\\log\\left(\\frac{\\exp(\\text{sim}(a, b))}{\\sum_j \\exp(\\text{sim}(a, j))}\\right)
+$$
+
+this means: make $a$ close to $b$, and far from every other $j$ in the batch.
+
+the similarity function is usually cosine similarity:
+
+$$
+\\text{sim}(x, y) = \\frac{x \\cdot y}{\\|x\\| \\cdot \\|y\\|}
+$$
+
+### 2. triplet loss
+
+triplet loss compares three examples:
+
+- anchor
+- positive (same concept)
+- negative (different concept)
+
+you want:
+
+$$
+\\text{distance}(a, p) + \\text{margin} < \\text{distance}(a, n)
+$$
+
+or more formally:
+
+$$
+L = \\max(0, \\text{distance}(a, p) - \\text{distance}(a, n) + \\text{margin})
+$$
+
+this forces the model to separate the positive from the negative by at least some margin. used in face verification (FaceNet) and metric learning.
+
+### 3. InfoNCE
+
+used in CLIP, SimCLR, and others. this is a temperature-scaled version of contrastive loss that improves training dynamics.
+
+$$
+L = -\\log\\left(\\frac{\\exp(\\text{sim}(a, b) / \\tau)}{\\sum_j \\exp(\\text{sim}(a, j) / \\tau)}\\right)
+$$
+
+where $\\tau$ is the temperature hyperparameter.
+
+## why is this useful?
+
+contrastive learning is **self-supervised** — meaning no labeled classes required.
+
+the labels come from relationships in the data:
+
+- this text matches that image
+- this crop is a different view of the same photo
+- this sentence paraphrases that one
+
+the model learns to structure its embedding space around meaning instead of memorized categories.
+
+## where it shows up
+
+contrastive learning powers a ton of modern systems:
+
+- **sentence embeddings**: Sentence-BERT, GTR, bge — all trained with contrastive or triplet loss
+- **vision**: SimCLR, DINOv2, MoCo use self-supervised contrastive learning
+- **multimodal**: CLIP learns shared embedding space across images and text
+- **retrieval**: DPR uses QA pairs and contrastive objectives to train dense retrieval models
+
+the result is an embedding space where semantic distance = vector distance.
+
+## implementation basics
+
+to build a contrastive system, you need:
+
+- **paired data**: things that should be similar (text↔text, image↔text, etc.)
+- **encoders**: like transformers for text or convnets/VITs for images
+- **a similarity metric**: typically cosine similarity
+- **a loss function**: contrastive loss, InfoNCE, or triplet loss
+
+and ideally:
+
+- large batch sizes (more negatives = better contrastive signal)
+- normalized embeddings (L2 norm)
+- temperature scaling to smooth gradients
+
+## tldr
+
+contrastive learning teaches models to compare, not just classify.
+
+- pull similar examples close
+- push different ones apart
+- train without explicit labels
+
+it's the core of how we get meaningful embeddings for search, retrieval, and matching. and if you're working with vector similarity, there's a good chance contrastive learning got you there.`
+    },
   };
 
   const navigate = useNavigate();
@@ -712,7 +848,10 @@ if you're building anything with an LLM and a data source -- you're probably gon
         </div>
         
         <div className="article-content">
-          <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+          <ReactMarkdown 
+            rehypePlugins={[rehypeRaw, rehypeKatex]}
+            remarkPlugins={[remarkMath]}
+          >
             {article.content}
           </ReactMarkdown>
         </div>

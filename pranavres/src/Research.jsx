@@ -4,6 +4,9 @@ import 'react-calendar/dist/Calendar.css';
 import ReactMarkdown from 'react-markdown';
 import Comments from './components/Comments';
 import rehypeRaw from 'rehype-raw';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 
 function Research() {
   // Format date to display in a readable format
@@ -1218,107 +1221,6 @@ that's the issue with recording myself- i'm so conscious about the damn camera. 
       `
     },
     "2025-05-25": {
-      content: `it's 2:49am, i'm about to go to bed.
-
-after i wake up in the morning, i'll work on three things:
-
-- leetcode
-- recording/editing videos
-- reimplementing Word2Vec
-
-i'm nearly finished with the cold email reel. will go ahead and finish it up tomorrow.
-in all honesty, i really should finish up some more cold emails. i've been slacking on that.
-
-i've also been slacking on school work. need to get on that cs prep & assignment.
-
-csc148:
-- prep, prep quiz
-- assignment
-
-moreover, need to update my resume. specifically need to add everything i've done over the last few months.
-
-- 4.0 gpa
-- mathema, $80k
-- @pranavpatnaik_, 5k followers
-- several misc. research projects in ML
-- hackathons won
-- ...among other things
-
-(10:53pm) posted a new [reel](https://www.instagram.com/reel/DKFIoZzNs6M/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==).
-didn't think it'd do well, but it's doing much better than i expected. will have to go ahead and post a reel about the cold email template soon.
-
-![cold email reel](https://i.postimg.cc/t4P5MTpY/image.png) 
-
-though, i admittedly haven't done much work on research lately.
-i've been busy with other misc. things, like getting back into the rhythm of posting again, but that really shouldn't be an excuse.
-
-i'll be working on the word2vec paper tomorrow.
-then, i'll post the new reel i've been editing.
-
-i'm liking this new rhythm. more of this, please.
-gonna spend the rest of the night doing leetcode.
-
----
-
-(1:04am) did the neetcode course, brushed up on Insertion Sort & MergeSort.
-
-- Insertion Sort
-![neetcode](https://i.postimg.cc/c45h0Hmx/image.png)
-
-- MergeSort
-![mergesort](https://i.postimg.cc/NMH8s7dB/image.png)
-
-- MergeSort Time Complexity
-![mstime](https://i.postimg.cc/Qx07ryjc/image.png)
-
-rewatching the neetcode course like it's the first time really lets me appreciate the course.
-i just racked up a new-found understanding of the huge difference between O(n) and O(log n) besides merely looking at the graphs.
-
-![neetcode](https://i.postimg.cc/vmqJ5M73/image.png)
-
-was also thinking of doing a (non-continuous) series of posts like, "here's what i studied last night." super quick, just a timelapse of what i did.
-i think that'd be a fun idea.
-besides that, i'm gonna post about distraction tomorrow. should be a fun one; a cool, general piece of advice that i think anyone that was my situation would benefit from.
-
-it's 1:12am. i'm gonna hit the hay soon, but neetcode's itching at my brain. i wanna do more.
-will add updates.
-
-(2:09am) continuing neetcode.
-
-i fucking hate sorting algorithms. why would anyone want to learn this shit?
-before anyone cuts me off, i'm not saying that i'm not good at memorizing them. i'm saying i fucking hate them.
-
-- Quick Sort
-
-![quicksort](https://i.postimg.cc/D0t43YNQ/image.png)
-
-i'm skipping Bucket Sort and moving on to his lectures on Binary Search.
-
-coming up: **Search Array & Search Range.**
-
-![binarysearch](https://i.postimg.cc/3rsm0dLL/image.png)
-
-forgot to mention: finished up the week 4 prep quiz for 148, going to do the rest of the prep tomorrow.
-need to start on that assignment too.
-anyway, onto to the next w/ neetcode.
-
-finished up Binary Search.
-
-![binarysearch](https://i.postimg.cc/vmjNFV9d/image.png)
-
-went ahead and also finished a medium problem: Search a 2D Matrix.
-
-![search2dmatrix](https://i.postimg.cc/xT4HP3SY/image.png)
-
-here's my soln:
-
-![search2dmatrixsoln](https://i.postimg.cc/hvJ44xZb/image.png)
-
-tomorrow, i'll get to Trees, Backtracking, and Heap/Priority Queue.
-pretty excited to dig deep into those. backtracking's a fun one.
-      `
-    },
-    "2025-05-24": {
       content: `spending today on three things:
 
 - fastai course
@@ -1657,7 +1559,10 @@ will post on twitter about the paper in a bit. gonna go play spider-man w/ the f
       {selectedEntry && selectedEntry.content ? (
         <div className="selected-entry">
           <h2>{formatDisplayDate(parseDateString(selectedEntry.date))}</h2>
-          <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+          <ReactMarkdown 
+            rehypePlugins={[rehypeRaw, rehypeKatex]}
+            remarkPlugins={[remarkMath]}
+          >
             {selectedEntry.content}
           </ReactMarkdown>
           <Comments entryDate={selectedEntry.date} />
