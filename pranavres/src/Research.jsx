@@ -33,10 +33,10 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
-    "2025-06-15": {
+    "2025-06-16": {
       content: `what a beautiful day.
 
-(9:12pm) going to work on the must-know document now.
+(8:54am) good morning, going to dial in for the next few hours to finish this assignment.
 
       `
     },

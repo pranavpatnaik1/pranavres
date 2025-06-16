@@ -11,6 +11,8 @@ import Resources from './Resources';
 import Resume from './Resume';
 import Roadmap from './Roadmap';
 import MustKnow from './MustKnow';
+import ColdEmailTemplate from './ColdEmailTemplate';
+import IntuitionPage from './IntuitionPage';
 
 function App() {
   // Format date to display in a readable format
@@ -248,6 +250,8 @@ oh man
               <Route path="/resources" element={<Resources />} />
               <Route path="/resources/must-knows" element={<MustKnow />} />
               <Route path="/resources/ml-roadmap" element={<Roadmap />} />
+              <Route path="/resources/cold-email-template" element={<ColdEmailTemplate />} />
+              <Route path="/resources/intuition-page" element={<IntuitionPage />} />
               <Route path="/essays/*" element={<Writing />} />
               <Route path="/resume" element={<Resume />} />
             </Routes>

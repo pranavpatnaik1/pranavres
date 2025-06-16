@@ -15,6 +15,18 @@ export default function Resources() {
       description: "a comprehensive guide to machine learning fundamentals",
       path: "/resources/ml-roadmap",
       thumbnail: "https://i.postimg.cc/VN3NjJmM/image.png" // Replace with your image URL
+    },
+    {
+      title: "cold email template",
+      description: "effective templates for outreach and networking",
+      path: "/resources/cold-email-template",
+      thumbnail: "https://i.postimg.cc/VNgSFpM9/image.png" // Replace with your image URL
+    },
+    {
+      title: "full guide to intuition",
+      description: "building intuition for complex concepts",
+      path: "/resources/intuition-page",
+      thumbnail: "https://i.postimg.cc/tRhZgsvn/image.png" // Replace with your image URL
     }
   ];
 
