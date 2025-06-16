@@ -7,7 +7,7 @@ export default function Resume() {
       
       <div className="resume-content">
         <iframe 
-          src="/resume.pdf"
+          src="/resume1.pdf"
           width="100%"
           height="800px"
           title="Resume"
