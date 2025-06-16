@@ -7,7 +7,7 @@ import 'react-calendar/dist/Calendar.css';
 import ReactMarkdown from 'react-markdown';
 import Home from './Home';
 import Research from './Research';
-import Projects from './Projects';
+import Resources from './Resources';
 import Resume from './Resume';
 import Roadmap from './Roadmap';
 import MustKnow from './MustKnow';
@@ -209,9 +209,9 @@ oh man
             <div className="sidebar-links">
               <ul>
                 <li><NavLink to="/research" end>research</NavLink></li>
-                <li><NavLink to="/projects">projects</NavLink></li>
-                <li><NavLink to="/essays">essays</NavLink></li>
                 <li><NavLink to="/resume">resume</NavLink></li>
+                <li><NavLink to="/essays">essays</NavLink></li>
+                <li><NavLink to="/resources">resources</NavLink></li>
               </ul>
             </div>
             
@@ -245,11 +245,11 @@ oh man
               <Route path="/research" element={<Research />} />
               <Route path="/" element={<Navigate to="/home" />} />
               <Route path="/home" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
+              <Route path="/resources" element={<Resources />} />
+              <Route path="/resources/must-knows" element={<MustKnow />} />
+              <Route path="/resources/ml-roadmap" element={<Roadmap />} />
               <Route path="/essays/*" element={<Writing />} />
               <Route path="/resume" element={<Resume />} />
-              <Route path="/ml-roadmap" element={<Roadmap />} />
-              <Route path="/must-knows" element={<MustKnow />} />
             </Routes>
           </main>
         </div>
