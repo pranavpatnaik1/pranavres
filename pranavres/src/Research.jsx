@@ -36,7 +36,8 @@ function Research() {
     "2025-06-15": {
       content: `what a beautiful day.
 
-(10:14am) going to work on the must-know document now. 
+(9:12pm) going to work on the must-know document now.
+
       `
     },
     "2025-06-14": {
