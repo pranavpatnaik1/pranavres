@@ -38,6 +38,10 @@ function Research() {
 
 (8:54am) good morning, going to dial in for the next few hours to finish this assignment.
 
+(11:40am) finished with the assignment. all done
+
+![assignment](https://i.postimg.cc/PJ7hY8R9/image.png)
+
       `
     },
     "2025-06-14": {
