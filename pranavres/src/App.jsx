@@ -249,7 +249,7 @@ oh man
               <Route path="/essays/*" element={<Writing />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/ml-roadmap" element={<Roadmap />} />
-              <Route path="/must-know" element={<MustKnow />} />
+              <Route path="/must-knows" element={<MustKnow />} />
             </Routes>
           </main>
         </div>
