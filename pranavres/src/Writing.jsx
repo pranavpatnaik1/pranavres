@@ -5,6 +5,7 @@ import { Routes, Route, useNavigate, useParams, Navigate } from 'react-router-do
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import 'katex/dist/katex.min.css';
+import ArticleComments from './components/ArticleComments';
 
 export default function Writing() {
   // Sample writing entries with titles, subtitles, and banner images
@@ -855,6 +856,8 @@ it's the core of how we get meaningful embeddings for search, retrieval, and mat
             {article.content}
           </ReactMarkdown>
         </div>
+        
+        <ArticleComments articleSlug={slug} />
       </div>
     );
   }

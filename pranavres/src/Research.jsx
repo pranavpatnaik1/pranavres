@@ -42,6 +42,7 @@ function Research() {
 
 ![assignment](https://i.postimg.cc/PJ7hY8R9/image.png)
 
+(10:41pm) working on [must-know doc](https://pranavpatnaik.com/resources/must-knows).
       `
     },
     "2025-06-14": {
