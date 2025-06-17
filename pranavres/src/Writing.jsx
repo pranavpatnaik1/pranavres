@@ -17,7 +17,7 @@ export default function Writing() {
       date: "2025-06-16",
       content: `# attention is all you need, explained like you're trying to implement it
 
-in 2017, vaswani et al. dropped a paper called ["attention is all you need"](https://arxiv.org/abs/1706.03762). and they weren't kidding — it completely changed how we do language modeling.
+in 2017, vaswani et al. dropped a paper called ["attention is all you need"](https://arxiv.org/abs/1706.03762). and they weren't kidding -- it completely changed how we do language modeling.
 
 before this, most NLP models were built on **RNNs**, **LSTMs**, and **CNNs**. they worked, but they had issues: long training times, weak memory over long sequences, and a general sense of clunkiness.
 
@@ -25,7 +25,7 @@ transformers threw all that out.
 
 > no recurrence. no convolution. just attention.
 
-and it worked better — faster training, better performance, and a clean architecture that scaled beautifully.
+and it worked better -- faster training, better performance, and a clean architecture that scaled beautifully.
 
 ## so what did the paper actually say?
 
@@ -34,7 +34,7 @@ the transformer architecture has two main pieces:
 - **encoder**: reads the input
 - **decoder**: generates the output
 
-each one is made of **stacks of attention and feedforward layers**. no loops, no time steps — you feed the whole sequence in *at once*.
+each one is made of **stacks of attention and feedforward layers**. no loops, no time steps -- you feed the whole sequence in *at once*.
 
 but the real innovation is in the core mechanism: **self-attention**.
 
@@ -45,9 +45,9 @@ every token in a sequence gets to "look" at every other token and decide what's 
 here's the basic idea:
 
 - for each word, generate 3 vectors:
-  - **query (Q)** — what am i looking for?
-  - **key (K)** — what do i offer?
-  - **value (V)** — what do i carry?
+  - **query (Q)** -- what am i looking for?
+  - **key (K)** -- what do i offer?
+  - **value (V)** -- what do i carry?
 
 you compute attention weights by comparing queries and keys:
 
@@ -64,13 +64,13 @@ this lets each token create a custom summary of the sequence, focusing on the mo
 
 ## multi-head attention
 
-instead of doing this once, transformers do it multiple times in parallel — with different learned projections.
+instead of doing this once, transformers do it multiple times in parallel -- with different learned projections.
 
 this is called **multi-head attention**.
 
 each "head" might learn to focus on different patterns:
 
-- one tracks subject–verb agreement
+- one tracks subject--verb agreement
 - one focuses on named entities
 - another attends to punctuation and spacing
 
@@ -94,10 +94,10 @@ the encoder reads the input sequence and turns it into a sequence of embeddings,
 
 ## the decoder
 
-the decoder looks similar — but with two attention blocks:
+the decoder looks similar -- but with two attention blocks:
 
-1. **masked self-attention** — so it can't peek at future tokens
-2. **encoder–decoder attention** — lets the decoder attend to the encoder output
+1. **masked self-attention** -- so it can't peek at future tokens
+2. **encoder-decoder attention** -- lets the decoder attend to the encoder output
 3. **feedforward + residuals**
 
 the decoder generates one token at a time, using what it's already predicted + what the encoder saw.
@@ -117,23 +117,23 @@ this lets the model infer relative and absolute position using only basic math.
 
 ## why it worked
 
-* **parallelizable** — unlike RNNs, transformers can process sequences all at once
-* **long-range dependencies** — attention lets each token access the full sequence
-* **scales well** — you can crank up layers and heads without breaking things
-* **simple building blocks** — attention + MLP + residuals = modular, flexible design
+* **parallelizable** -- unlike RNNs, transformers can process sequences all at once
+* **long-range dependencies** -- attention lets each token access the full sequence
+* **scales well** -- you can crank up layers and heads without breaking things
+* **simple building blocks** -- attention + MLP + residuals = modular, flexible design
 
-they tested it on machine translation (English↔German, English↔French) and beat the state of the art — faster and with fewer parameters.
+they tested it on machine translation (English<->German, English<->French) and beat the state of the art -- faster and with fewer parameters.
 
 ## what happened after?
 
 everything.
 
-* **BERT** (2018) — encoder-only, masked language modeling
-* **GPT** (2018–now) — decoder-only, causal generation
-* **T5**, **T5.1.1**, **UL2** — full encoder-decoder stacks for multitask learning
-* **CLIP**, **DINO**, **ViT** — attention across text, images, and more
+* **BERT** (2018) -- encoder-only, masked language modeling
+* **GPT** (2018--now) -- decoder-only, causal generation
+* **T5**, **T5.1.1**, **UL2** -- full encoder-decoder stacks for multitask learning
+* **CLIP**, **DINO**, **ViT** -- attention across text, images, and more
 
-"attention is all you need" didn't just propose a new architecture — it defined the backbone of basically every state-of-the-art model that came after it.
+"attention is all you need" didn't just propose a new architecture -- it defined the backbone of basically every state-of-the-art model that came after it.
 
 ## tldr
 
@@ -143,7 +143,7 @@ transformers work by:
 * processing sequences in parallel
 * learning smart representations through layers of attention and feedforward networks
 
-the attention mechanism — especially self-attention — turned out to be powerful enough to replace recurrence entirely.
+the attention mechanism -- especially self-attention -- turned out to be powerful enough to replace recurrence entirely.
 
 > and that's why, seven years later, it's still true:
 > **attention is all you need**.`
@@ -339,21 +339,21 @@ this whole attention thing is called **self-attention**, and it's the beating he
 okay so here's the basic setup:
 
 - you feed in a sentence like: '["the", "cat", "sat", "on", "the", "mat"]'
-- each word gets turned into a vector — a list of numbers that kind of captures its meaning.
+- each word gets turned into a vector -- a list of numbers that kind of captures its meaning.
 - now each word sends out three signals:
   - a **query** (what am i looking for?)
   - a **key** (what do i offer?)
   - a **value** (what info do i carry?)
 
-each word matches its query to everyone else's key — to figure out who's relevant — and pulls in info from their values.
+each word matches its query to everyone else's key -- to figure out who's relevant -- and pulls in info from their values.
 
 the result? every word builds a custom context-aware version of itself.
 
 ## heads, stacks, layers
 
-transformers don't do attention just once. they do it in **multiple heads** — like having different perspectives looking at the sentence in parallel. one head might focus on grammar, another on meaning, another on position.
+transformers don't do attention just once. they do it in **multiple heads** -- like having different perspectives looking at the sentence in parallel. one head might focus on grammar, another on meaning, another on position.
 
-then you **stack** a bunch of those layers on top of each other — and you get a deep model that actually "gets" language.
+then you **stack** a bunch of those layers on top of each other -- and you get a deep model that actually "gets" language.
 
 at the end, you might have a head that realizes:
 
@@ -372,8 +372,8 @@ the original transformer had two halves:
 
 but different models use different parts:
 
-- **BERT** only uses the encoder — it's built to understand things
-- **GPT** only uses the decoder — it's built to generate things
+- **BERT** only uses the encoder -- it's built to understand things
+- **GPT** only uses the decoder -- it's built to generate things
 
 ## why it crushed everything
 
@@ -386,7 +386,7 @@ so why did transformers take over?
    attention lets the model remember stuff from anywhere in the sentence, not just the last few words.
 
 3. **scales like crazy**  
-   you can keep stacking layers and making the model bigger — and it just keeps getting better.
+   you can keep stacking layers and making the model bigger -- and it just keeps getting better.
 
 that's how we went from tiny models doing sentiment analysis to GPT-4 writing essays and coding websites.
 
@@ -636,14 +636,14 @@ this is how tools like ChatGPT + web, Perplexity, and custom GPTs stay grounded.
 
 ## tldr
 
-vector search flips search on its head — you don't match exact text, you match **meaning**.
+vector search flips search on its head -- you don't match exact text, you match **meaning**.
 
 - powered by embeddings
 - accelerated by ANN algorithms
 - made easy by vector databases
 - essential for semantic search, RAG, and modern AI interfaces
 
-if you want to build smarter search — vector is the way.
+if you want to build smarter search -- vector is the way.
 `},
     "rag": {
       title: "retrieval-augmented generation",
@@ -662,7 +662,7 @@ RAG fixes that.
 
 > retrieval-augmented generation = give the model context from an external knowledge base right before it answers.
 
-this way, you get responses grounded in real info — not just the model's memory.
+this way, you get responses grounded in real info -- not just the model's memory.
 
 ## how it works (step-by-step)
 
@@ -671,7 +671,7 @@ this way, you get responses grounded in real info — not just the model's memor
 
 2. **search your database**
    - use vector search (see previous article) to pull the most relevant docs
-   - usually 3–10 chunks
+   - usually 3--10 chunks
 
 3. **stuff or chain the context**
    - either shove those chunks directly into the prompt (naive RAG)
@@ -681,7 +681,7 @@ this way, you get responses grounded in real info — not just the model's memor
    - pass the retrieved context + user query into a language model (openai, anthropic, mistral, llama, whatever)
    - the model answers using the given context
 
-if done right, the LLM acts like it "knows" your data — but it's actually reading it in real time.
+if done right, the LLM acts like it "knows" your data -- but it's actually reading it in real time.
 
 ## why it works
 
@@ -769,15 +769,15 @@ if you're building anything with an LLM and a data source -- you're probably gon
       subtitle: "explained like you're a 5 y/o",
       banner: "https://i.postimg.cc/vTdK9SHZ/triplet-loss.png",
       date: "2025-06-14",
-      content: `
+      content: `# contrastive learning explained
 
-a lot of modern models aren't trained to classify or generate — they're trained to **compare**.
+a lot of modern models aren't trained to classify or generate -- they're trained to **compare**.
 
 that's the core idea of contrastive learning:
 
 > bring similar things closer, push different things apart.
 
-it's how models learn really useful embeddings — especially for search, retrieval, and matching tasks. if you've worked with CLIP, sentence-transformers, DINOv2, or anything involving semantic similarity, contrastive learning is probably under the hood.
+it's how models learn really useful embeddings -- especially for search, retrieval, and matching tasks. if you've worked with CLIP, sentence-transformers, DINOv2, or anything involving semantic similarity, contrastive learning is probably under the hood.
 
 ## what is contrastive learning?
 
@@ -852,7 +852,7 @@ where $\\tau$ is the temperature hyperparameter.
 
 ## why is this useful?
 
-contrastive learning is **self-supervised** — meaning no labeled classes required.
+contrastive learning is **self-supervised** -- meaning no labeled classes required.
 
 the labels come from relationships in the data:
 
@@ -866,7 +866,7 @@ the model learns to structure its embedding space around meaning instead of memo
 
 contrastive learning powers a ton of modern systems:
 
-- **sentence embeddings**: Sentence-BERT, GTR, bge — all trained with contrastive or triplet loss
+- **sentence embeddings**: Sentence-BERT, GTR, bge -- all trained with contrastive or triplet loss
 - **vision**: SimCLR, DINOv2, MoCo use self-supervised contrastive learning
 - **multimodal**: CLIP learns shared embedding space across images and text
 - **retrieval**: DPR uses QA pairs and contrastive objectives to train dense retrieval models
@@ -877,7 +877,7 @@ the result is an embedding space where semantic distance = vector distance.
 
 to build a contrastive system, you need:
 
-- **paired data**: things that should be similar (text↔text, image↔text, etc.)
+- **paired data**: things that should be similar (text<->text, image<->text, etc.)
 - **encoders**: like transformers for text or convnets/VITs for images
 - **a similarity metric**: typically cosine similarity
 - **a loss function**: contrastive loss, InfoNCE, or triplet loss

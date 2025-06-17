@@ -59,6 +59,7 @@ i hate trudging through it, but it's necessary.
 i'll likely finish this by tomorrow.
 
 (2:26pm) never mind, finished the article on attention. fairly proud of it.
+you can check it out [here](https://pranavpatnaik.com/writing/attention-is-all-you-need).
       `
     },
     "2025-06-14": {
