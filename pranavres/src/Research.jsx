@@ -57,6 +57,8 @@ i hate trudging through it, but it's necessary.
 ![paper](https://i.postimg.cc/PqPDnK5B/image.png)
 
 i'll likely finish this by tomorrow.
+
+(2:26pm) never mind, finished the article on attention. fairly proud of it.
       `
     },
     "2025-06-14": {

@@ -10,6 +10,144 @@ import ArticleComments from './components/ArticleComments';
 export default function Writing() {
   // Sample writing entries with titles, subtitles, and banner images
   const writingEntries = {
+    "attention-is-all-you-need": {
+      title: "attention is all you need, explained",
+      subtitle: "breaking down the 2017 paper that changed everything",
+      banner: "https://i.postimg.cc/PqPDnK5B/image.png",
+      date: "2025-06-16",
+      content: `# attention is all you need, explained like you're trying to implement it
+
+in 2017, vaswani et al. dropped a paper called ["attention is all you need"](https://arxiv.org/abs/1706.03762). and they weren't kidding — it completely changed how we do language modeling.
+
+before this, most NLP models were built on **RNNs**, **LSTMs**, and **CNNs**. they worked, but they had issues: long training times, weak memory over long sequences, and a general sense of clunkiness.
+
+transformers threw all that out.
+
+> no recurrence. no convolution. just attention.
+
+and it worked better — faster training, better performance, and a clean architecture that scaled beautifully.
+
+## so what did the paper actually say?
+
+the transformer architecture has two main pieces:
+
+- **encoder**: reads the input
+- **decoder**: generates the output
+
+each one is made of **stacks of attention and feedforward layers**. no loops, no time steps — you feed the whole sequence in *at once*.
+
+but the real innovation is in the core mechanism: **self-attention**.
+
+## what is self-attention?
+
+every token in a sequence gets to "look" at every other token and decide what's relevant. instead of just passing info left to right like an RNN, every word has access to the full context.
+
+here's the basic idea:
+
+- for each word, generate 3 vectors:
+  - **query (Q)** — what am i looking for?
+  - **key (K)** — what do i offer?
+  - **value (V)** — what do i carry?
+
+you compute attention weights by comparing queries and keys:
+
+\`\`\`
+attention(Q, K, V) = softmax(QKᵀ / sqrt(d_k)) · V
+\`\`\`
+
+- \`QKᵀ\` gives you a matrix of similarities
+- divide by \`sqrt(d_k)\` to scale things
+- softmax turns it into weights
+- multiply by \`V\` to get a new representation
+
+this lets each token create a custom summary of the sequence, focusing on the most relevant parts.
+
+## multi-head attention
+
+instead of doing this once, transformers do it multiple times in parallel — with different learned projections.
+
+this is called **multi-head attention**.
+
+each "head" might learn to focus on different patterns:
+
+- one tracks subject–verb agreement
+- one focuses on named entities
+- another attends to punctuation and spacing
+
+then you concatenate the results and send them through a linear layer.
+
+\`\`\`text
+MultiHead(Q, K, V) = Concat(head₁, ..., head₈) · Wᴼ
+\`\`\`
+
+## the encoder
+
+each encoder block has:
+
+1. **multi-head self-attention**
+2. **feedforward layer**
+3. **layer norm + residuals**
+
+and you stack these N times (e.g. 6 layers in the original paper).
+
+the encoder reads the input sequence and turns it into a sequence of embeddings, where each token has been deeply contextualized.
+
+## the decoder
+
+the decoder looks similar — but with two attention blocks:
+
+1. **masked self-attention** — so it can't peek at future tokens
+2. **encoder–decoder attention** — lets the decoder attend to the encoder output
+3. **feedforward + residuals**
+
+the decoder generates one token at a time, using what it's already predicted + what the encoder saw.
+
+## positional encoding
+
+since transformers don't process tokens in order (no recurrence), you have to inject **position** manually.
+
+they use **sinusoidal positional encodings** added to the input embeddings:
+
+\`\`\`
+PE(pos, 2i)   = sin(pos / 10000^(2i/d_model))
+PE(pos, 2i+1) = cos(pos / 10000^(2i/d_model))
+\`\`\`
+
+this lets the model infer relative and absolute position using only basic math.
+
+## why it worked
+
+* **parallelizable** — unlike RNNs, transformers can process sequences all at once
+* **long-range dependencies** — attention lets each token access the full sequence
+* **scales well** — you can crank up layers and heads without breaking things
+* **simple building blocks** — attention + MLP + residuals = modular, flexible design
+
+they tested it on machine translation (English↔German, English↔French) and beat the state of the art — faster and with fewer parameters.
+
+## what happened after?
+
+everything.
+
+* **BERT** (2018) — encoder-only, masked language modeling
+* **GPT** (2018–now) — decoder-only, causal generation
+* **T5**, **T5.1.1**, **UL2** — full encoder-decoder stacks for multitask learning
+* **CLIP**, **DINO**, **ViT** — attention across text, images, and more
+
+"attention is all you need" didn't just propose a new architecture — it defined the backbone of basically every state-of-the-art model that came after it.
+
+## tldr
+
+transformers work by:
+
+* letting every token attend to every other token
+* processing sequences in parallel
+* learning smart representations through layers of attention and feedforward networks
+
+the attention mechanism — especially self-attention — turned out to be powerful enough to replace recurrence entirely.
+
+> and that's why, seven years later, it's still true:
+> **attention is all you need**.`
+    },
     "embeddings": {
       title: "embeddings",
       subtitle: "a quick breakdown on how ML models understand the world",
