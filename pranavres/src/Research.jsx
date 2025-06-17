@@ -43,6 +43,20 @@ function Research() {
 ![assignment](https://i.postimg.cc/PJ7hY8R9/image.png)
 
 (10:41pm) working on [must-know doc](https://pranavpatnaik.com/resources/must-knows).
+with these, i'm trying not to be too egotistical, purely diving deep into these and making sure i truly understand them.
+it's almost like i'm studying for AI jeopardy; if anyone asks me a question about any of these, i'll be able to answer it in exhaustive fashion.
+starting with the beginning: attention is all you need.
+
+(2:09am) it's an incredibly arduous process to truly understand these concepts.
+anyone who says they know what they're talking about is lying.
+i'm sure most people in ML have heard of this paper, but can you *truly* explain it?
+likely not.
+i'm glad i'm sitting down and really digging deep into the math & concepts.
+i hate trudging through it, but it's necessary.
+
+![paper](https://i.postimg.cc/PqPDnK5B/image.png)
+
+i'll likely finish this by tomorrow.
       `
     },
     "2025-06-14": {
