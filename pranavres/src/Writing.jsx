@@ -815,7 +815,7 @@ this means: make $a$ close to $b$, and far from every other $j$ in the batch.
 the similarity function is usually cosine similarity:
 
 $$
-\\text{sim}(x, y) = \\frac{x \\cdot y}{\\|x\\| \\cdot \\|y\\|}
+\\text{sim}(x, y) = \\frac{x \\cdot y}{\\|x\\| \\|y\\|}
 $$
 
 ### 2. triplet loss
