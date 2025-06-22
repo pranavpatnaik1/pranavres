@@ -10,6 +10,17 @@ import ArticleComments from './components/ArticleComments';
 export default function Writing() {
   // Sample writing entries with titles, subtitles, and banner images
   const writingEntries = {
+    "batch-normalization": {
+      title: "batch normalization",
+      subtitle: "accelerating deep network training by reducing internal covariate shift",
+      banner: "https://i.postimg.cc/FHJ7whCm/image.png",
+      date: "2025-06-20",
+      content: `# batch normalization
+      
+
+      
+      `
+    },
     "attention-is-all-you-need": {
       title: "attention is all you need, explained",
       subtitle: "breaking down the 2017 paper that changed everything",

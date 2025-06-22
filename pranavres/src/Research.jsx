@@ -33,11 +33,10 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
-    "2025-06-20": {
-      content: `starting the day off strong: working on the must-know doc.
+    "2025-06-22": {
+      content: `it's been a while.
 
-(11:57am) i'm going to go ahead and work on "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift."
-i've read the paper before, but i'll go ahead and study the mathematics behind it as well.
+(5:01pm) going to study for my midterm on saturday now. should be fairly straightforward.
 
       `
     },
