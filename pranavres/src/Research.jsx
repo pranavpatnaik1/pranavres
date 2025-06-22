@@ -36,7 +36,7 @@ function Research() {
     "2025-06-22": {
       content: `it's been a while.
 
-(5:01pm) going to study for my midterm on saturday now. should be fairly straightforward.
+(5:33pm) going to study for my midterm on saturday now. should be fairly straightforward.
 
       `
     },
