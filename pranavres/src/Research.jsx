@@ -35,7 +35,28 @@ function Research() {
 
 (5:33pm) going to study for my midterm on saturday now. should be fairly straightforward.
 
+(11:16pm) with studying out of the way, i'll work on inkwell now.
 
+![inkwell](https://i.postimg.cc/jjGkPSsr/inkwell-banner.png)
+
+i'm fairly happy with the design, i'm going to work on the workflow/mvp now.
+i'll hop in figma & work on the overall UI first to get a feel for the app, then go ahead and work on the functionality.
+
+here's what i've got so far as a sketch: 
+
+![sketch](https://i.postimg.cc/HLhrTjQX/peak-50.jpg)
+
+the following needs to be finished in the mvp:
+
+1. supabase integration
+2. add an entry, receive response next morning
+
+that's about it for now.
+i'll hop on figma and work on the UI now.
+
+came up with a cute icon for the app:
+
+![icon](https://i.postimg.cc/wvKYgdb0/app-icon.png)
       `
     },
     "2025-06-16": {
