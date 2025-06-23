@@ -1449,3 +1449,16 @@ html body .sidebar::-webkit-scrollbar {
   }
 }
 
+/* Remove all KaTeX-related CSS */
+/* Add image unavailable styling */
+.image-unavailable {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #666;
+  font-size: 14px;
+  margin: 10px 0;
+  padding: 20px;
+  text-align: center;
+}
+

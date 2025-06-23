@@ -5,11 +5,13 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
-    include: ['katex']
+    exclude: ['@supabase/supabase-js']
   },
   build: {
-    commonjsOptions: {
-      include: [/katex/]
+    rollupOptions: {
+      output: {
+        manualChunks: {}
+      }
     }
   }
 })

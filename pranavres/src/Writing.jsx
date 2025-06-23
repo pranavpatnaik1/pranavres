@@ -3,8 +3,6 @@ import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import { Routes, Route, useNavigate, useParams, Navigate } from 'react-router-dom';
 import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
-import 'katex/dist/katex.min.css';
 import ArticleComments from './components/ArticleComments';
 
 export default function Writing() {
@@ -998,9 +996,17 @@ it's the core of how we get meaningful embeddings for search, retrieval, and mat
         </div>
         
         <div className="article-content">
-          <ReactMarkdown 
-            rehypePlugins={[rehypeRaw, rehypeKatex]}
-            remarkPlugins={[remarkMath]}
+          <ReactMarkdown
+            rehypePlugins={[rehypeRaw]}
+            components={{
+              img: ({node, ...props}) => {
+                return props.src ? (
+                  <img {...props} alt={props.alt || 'Article image'} />
+                ) : (
+                  <div className="image-unavailable">Image unavailable</div>
+                );
+              }
+            }}
           >
             {article.content}
           </ReactMarkdown>

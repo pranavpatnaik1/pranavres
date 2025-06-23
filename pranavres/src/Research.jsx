@@ -5,8 +5,6 @@ import ReactMarkdown from 'react-markdown';
 import Comments from './components/Comments';
 import rehypeRaw from 'rehype-raw';
 import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
-import 'katex/dist/katex.min.css';
 
 function Research() {
   // Format date to display in a readable format
@@ -37,6 +35,7 @@ function Research() {
       content: `it's been a while.
 
 (5:33pm) going to study for my midterm on saturday now. should be fairly straightforward.
+
 
       `
     },
@@ -1608,9 +1607,17 @@ will post on twitter about the paper in a bit. gonna go play spider-man w/ the f
       {selectedEntry && selectedEntry.content ? (
         <div className="selected-entry">
           <h2>{formatDisplayDate(parseDateString(selectedEntry.date))}</h2>
-          <ReactMarkdown 
-            rehypePlugins={[rehypeRaw, rehypeKatex]}
-            remarkPlugins={[remarkMath]}
+          <ReactMarkdown
+            rehypePlugins={[rehypeRaw]}
+            components={{
+              img: ({node, ...props}) => {
+                return props.src ? (
+                  <img {...props} alt={props.alt || 'Article image'} />
+                ) : (
+                  <div className="image-unavailable">Image unavailable</div>
+                );
+              }
+            }}
           >
             {selectedEntry.content}
           </ReactMarkdown>
