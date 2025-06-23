@@ -57,6 +57,10 @@ i'll hop on figma and work on the UI now.
 came up with a cute icon for the app:
 
 ![icon](https://i.postimg.cc/wvKYgdb0/app-icon.png)
+
+finished the UI for inkwell:
+
+![ui](https://i.postimg.cc/Fz8xKqRp/image.png)
       `
     },
     "2025-06-16": {
