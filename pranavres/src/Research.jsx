@@ -61,6 +61,20 @@ came up with a cute icon for the app:
 finished the UI for inkwell:
 
 ![ui](https://i.postimg.cc/Fz8xKqRp/image.png)
+
+updated the app icon for inkwell:
+
+![icon](https://i.postimg.cc/2ShLvQn8/app-icon.png)
+
+did a quick design of the open-email tab:
+
+![email](https://i.postimg.cc/bJg6Q6ZQ/image.png)
+
+and with that, i'll go ahead and head to bed.
+
+<div style="text-align: center;">
+<b><u>[sleep: 1:51am]</u></b>
+</div>
       `
     },
     "2025-06-16": {
