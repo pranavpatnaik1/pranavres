@@ -4,14 +4,17 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      '@supabase/supabase-js': '@supabase/supabase-js/dist/module'
+    }
+  },
   optimizeDeps: {
-    exclude: ['@supabase/supabase-js']
+    include: ['@supabase/supabase-js']
   },
   build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {}
-      }
+    commonjsOptions: {
+      transformMixedEsModules: true
     }
   }
 })
