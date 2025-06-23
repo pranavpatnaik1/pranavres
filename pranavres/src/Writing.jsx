@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import { Routes, Route, useNavigate, useParams, Navigate } from 'react-router-dom';
-import remarkMath from 'remark-math';
 import ArticleComments from './components/ArticleComments';
 
 export default function Writing() {

@@ -4,7 +4,6 @@ import 'react-calendar/dist/Calendar.css';
 import ReactMarkdown from 'react-markdown';
 import Comments from './components/Comments';
 import rehypeRaw from 'rehype-raw';
-import remarkMath from 'remark-math';
 
 function Research() {
   // Format date to display in a readable format
@@ -991,7 +990,7 @@ i'll try explaining it here (tomorrow)
     "2025-05-29": {
       content: `good morning.
 
-(3:31am) it's 3:31am. i'm up.
+it's 2:18am. i'm up.
 
 not for long. i'm just typing out what i'd like to do after i wake up.
 
