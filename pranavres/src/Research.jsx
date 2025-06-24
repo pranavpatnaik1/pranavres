@@ -30,6 +30,13 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-23": {
+      content: `today's a study-for-midterm day.
+
+it's 10:51am, i'm going to dedicate the next hour to studying for the midterm. going through the broader concepts first. seeing if i forgot anything.
+let's do it.
+      `
+    },
     "2025-06-22": {
       content: `it's been a while.
 

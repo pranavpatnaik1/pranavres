@@ -11,12 +11,151 @@ export default function Writing() {
       title: "batch normalization",
       subtitle: "accelerating deep network training by reducing internal covariate shift",
       banner: "https://i.postimg.cc/FHJ7whCm/image.png",
-      date: "2025-06-20",
-      content: `# batch normalization
-      
+      date: "2025-06-23",
+      content: `# batch normalization: accelerating deep network training by reducing internal covariate shift
 
-      
-      `
+i'm writing this article to analyze the following paper:  
+**"Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"**  
+by Sergey Ioffe and Christian Szegedy (Google, 2015)  
+
+<div style="text-align: center;">
+
+[(link to paper)](https://arxiv.org/abs/1502.03167)
+
+</div>
+
+this paper introduced one of the most widely used tricks in deep learning: **batch normalization**, or **batch norm**.
+
+if you've trained a neural network since 2015, you've probably used it. but if you've never stopped to ask what it *actually* does — or why it works — that's what this article is for.
+
+## the core idea
+
+as a neural network trains, the distribution of activations in each layer **keeps shifting**.
+
+this is called **internal covariate shift** — the input to a layer changes as the previous layers update, making training harder. you end up having to re-learn how to fit new inputs every time the upstream layers change.
+
+batch norm fixes this by **normalizing the input to each layer** — keeping the distribution more stable, even as the weights evolve.
+
+## how batch norm works
+
+here's what happens inside a batch norm layer:
+
+given a batch of inputs \`x = [x₁, x₂, ..., xₙ]\`:
+
+1. compute the **mean** of the batch:
+
+<div style="text-align: center;">
+
+\`\`\`
+μₐ = (1/m) ∑ xᵢ
+\`\`\`
+
+</div>
+
+2. compute the **variance**:
+
+<div style="text-align: center;">
+
+\`\`\`
+σ²ₐ = (1/m) ∑(xᵢ - μₐ)²
+\`\`\`
+
+</div>
+
+3. normalize the batch:
+
+<div style="text-align: center;">
+
+\`\`\`
+x̂ᵢ = (xᵢ - μₐ) / sqrt(σ²ₐ + ε)
+\`\`\`
+
+</div>
+
+4. scale and shift with learnable parameters \`γ\` and \`β\`:
+
+<div style="text-align: center;">
+
+\`\`\`
+yᵢ = γ · x̂ᵢ + β
+\`\`\`
+
+</div>
+
+- \`ε\` is a small constant to avoid division by zero
+- \`γ\` and \`β\` let the network recover the original representation if needed
+
+## what does this achieve?
+
+by normalizing each batch:
+
+- activations stay centered and scaled
+- gradients flow more smoothly through the network
+- the model becomes more robust to weight initialization
+- training becomes faster and more stable
+
+and you can use **higher learning rates**, since the network is less likely to blow up from sudden shifts.
+
+## why "batch" normalization?
+
+because the mean and variance are computed **across the current mini-batch** during training.
+
+at inference time, you don't have a batch — so you use **running averages** of the mean and variance instead. these are updated during training.
+
+## where do you put it?
+
+typically, right **after the linear/convolution layer**, before the activation function.
+
+common block:
+
+\`\`\`
+Linear → BatchNorm → ReLU
+\`\`\`
+
+or in conv nets:
+
+\`\`\`
+Conv → BatchNorm → ReLU → Pool
+\`\`\`
+
+it's now a default building block in architectures like ResNet, Inception, EfficientNet, etc.
+
+## but does it really reduce covariate shift?
+
+this is where things get interesting.
+
+the **original motivation** was to reduce internal covariate shift — the paper even put it in the title. but later work showed that this might not be the full story.
+
+batch norm seems to help mostly because it:
+
+- smooths the optimization landscape
+- keeps gradients in check
+- provides regularization (like dropout-lite)
+
+in practice, even if the "covariate shift" theory isn't perfect, the results speak for themselves — **batch norm speeds up training and improves performance**.
+
+## impact
+
+batch norm has been cited over **70,000+ times**. it made deep networks easier to train, more reliable, and more efficient.
+
+it also paved the way for other normalization techniques:
+
+- **LayerNorm** (used in transformers)
+- **GroupNorm**, **InstanceNorm**, **WeightNorm**
+- **RMSNorm**, **ScaleNorm**, and newer variants
+
+normalization became a core design tool, not just a trick.
+
+## tldr
+
+batch norm:
+
+- normalizes layer inputs within a mini-batch
+- keeps training stable by reducing distributional shifts
+- enables faster training and higher learning rates
+- is now a default layer in most modern architectures
+
+even if the original theory about covariate shift doesn't fully hold up — the technique absolutely does.`
     },
     "attention-is-all-you-need": {
       title: "attention is all you need, explained",
@@ -774,10 +913,10 @@ if you're building anything with an LLM and a data source -- you're probably gon
 `},
     "contrastive-learning": {
       title: "contrastive learning",
-      subtitle: "explained like you're a 5 y/o",
-      banner: "https://i.postimg.cc/vTdK9SHZ/triplet-loss.png",
-      date: "2025-06-14",
-      content: `# contrastive learning explained
+      subtitle: "teaching models to compare, not just classify",
+      banner: "https://i.postimg.cc/1zYsR30v/image.png",
+      date: "2025-06-09",
+      content: `# explaining contrastive learning
 
 a lot of modern models aren't trained to classify or generate -- they're trained to **compare**.
 
@@ -810,21 +949,17 @@ no class labels. no supervision beyond which things go together.
 
 with a loss function designed to reshape the space.
 
-### 1. contrastive loss (basic form)
+### 1. cosine similarity
 
-used in SimCLR and similar setups. for a given anchor $a$ and positive $b$:
+the most common similarity metric:
 
-$$
-L = -\\log\\left(\\frac{\\exp(\\text{sim}(a, b))}{\\sum_j \\exp(\\text{sim}(a, j))}\\right)
-$$
-
-this means: make $a$ close to $b$, and far from every other $j$ in the batch.
-
-the similarity function is usually cosine similarity:
+<div style="text-align: center;">
 
 $$
 \\text{sim}(x, y) = \\frac{x \\cdot y}{\\|x\\| \\|y\\|}
 $$
+
+</div>
 
 ### 2. triplet loss
 
@@ -836,15 +971,23 @@ triplet loss compares three examples:
 
 you want:
 
+<div style="text-align: center;">
+
 $$
 \\text{distance}(a, p) + \\text{margin} < \\text{distance}(a, n)
 $$
 
+</div>
+
 or more formally:
+
+<div style="text-align: center;">
 
 $$
 L = \\max(0, \\text{distance}(a, p) - \\text{distance}(a, n) + \\text{margin})
 $$
+
+</div>
 
 this forces the model to separate the positive from the negative by at least some margin. used in face verification (FaceNet) and metric learning.
 
@@ -852,9 +995,13 @@ this forces the model to separate the positive from the negative by at least som
 
 used in CLIP, SimCLR, and others. this is a temperature-scaled version of contrastive loss that improves training dynamics.
 
+<div style="text-align: center;">
+
 $$
 L = -\\log\\left(\\frac{\\exp(\\text{sim}(a, b) / \\tau)}{\\sum_j \\exp(\\text{sim}(a, j) / \\tau)}\\right)
 $$
+
+</div>
 
 where $\\tau$ is the temperature hyperparameter.
 
@@ -951,7 +1098,7 @@ it's the core of how we get meaningful embeddings for search, retrieval, and mat
               <div className="article-card-content">
                 <h2>{article.title}</h2>
                 <p className="article-subtitle">{article.subtitle}</p>
-                <span className="article-date">{new Date(article.date).toLocaleDateString('en-US', { 
+                <span className="article-date">{new Date(article.date + 'T12:00:00').toLocaleDateString('en-US', { 
                   year: 'numeric', 
                   month: 'long', 
                   day: 'numeric' 
@@ -985,7 +1132,7 @@ it's the core of how we get meaningful embeddings for search, retrieval, and mat
             <h1>{article.title}</h1>
             <p>{article.subtitle}</p>
             <span className="article-date">
-              {new Date(article.date).toLocaleDateString('en-US', { 
+              {new Date(article.date + 'T12:00:00').toLocaleDateString('en-US', { 
                 year: 'numeric', 
                 month: 'long', 
                 day: 'numeric' 
@@ -1004,6 +1151,21 @@ it's the core of how we get meaningful embeddings for search, retrieval, and mat
                 ) : (
                   <div className="image-unavailable">Image unavailable</div>
                 );
+              },
+              p: ({node, children}) => {
+                // Check if the paragraph contains only math ($$...$$)
+                const childrenArray = React.Children.toArray(children);
+                if (childrenArray.length === 1 && typeof childrenArray[0] === 'string') {
+                  const text = childrenArray[0];
+                  if (text.startsWith('$$') && text.endsWith('$$')) {
+                    return (
+                      <div style={{ textAlign: 'center' }}>
+                        <p>{children}</p>
+                      </div>
+                    );
+                  }
+                }
+                return <p>{children}</p>;
               }
             }}
           >

@@ -1462,3 +1462,12 @@ html body .sidebar::-webkit-scrollbar {
   text-align: center;
 }
 
+/* Math block styling */
+.article-content div[style*="text-align: center"] {
+  margin: 2rem 0;
+}
+
+.article-content div[style*="text-align: center"] p {
+  margin: 0;
+}
+
