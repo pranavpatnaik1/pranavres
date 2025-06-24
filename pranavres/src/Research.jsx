@@ -39,6 +39,14 @@ let's do it.
 (11:34pm) had a great day. i'll break it down:
 
 wrote an article about batch normalization. you can check it out [here](https://pranavpatnaik.com/essays/batch-normalization).
+i'm fairly happy with it.
+
+studying for saturday's midterm went well. i studied for about 1.5hrs, then moved on to inkwell.
+made a reel about inkwell today, detailing my approach on it. it's doing fairly well.
+
+![reel](https://i.postimg.cc/hvbYwGGy/image.png)
+
+gonna spend the next few hours working on pulse. hate having to pick up my phone or open up other apps in order to update my status.
       `
     },
     "2025-06-22": {
