@@ -20,21 +20,21 @@ by Sergey Ioffe and Christian Szegedy (Google, 2015)
 
 <div style="text-align: center;">
 
-[(link to paper)](https://arxiv.org/abs/1502.03167)
+[link to paper](https://arxiv.org/abs/1502.03167)
 
 </div>
 
 this paper introduced one of the most widely used tricks in deep learning: **batch normalization**, or **batch norm**.
 
-if you've trained a neural network since 2015, you've probably used it. but if you've never stopped to ask what it *actually* does — or why it works — that's what this article is for.
+if you've trained a neural network since 2015, you've probably used it. but if you've never stopped to ask what it *actually* does -- or why it works -- that's what this article is for.
 
 ## the core idea
 
 as a neural network trains, the distribution of activations in each layer **keeps shifting**.
 
-this is called **internal covariate shift** — the input to a layer changes as the previous layers update, making training harder. you end up having to re-learn how to fit new inputs every time the upstream layers change.
+this is called **internal covariate shift** -- the input to a layer changes as the previous layers update, making training harder. you end up having to re-learn how to fit new inputs every time the upstream layers change.
 
-batch norm fixes this by **normalizing the input to each layer** — keeping the distribution more stable, even as the weights evolve.
+batch norm fixes this by **normalizing the input to each layer** -- keeping the distribution more stable, even as the weights evolve.
 
 ## how batch norm works
 
@@ -100,7 +100,7 @@ and you can use **higher learning rates**, since the network is less likely to b
 
 because the mean and variance are computed **across the current mini-batch** during training.
 
-at inference time, you don't have a batch — so you use **running averages** of the mean and variance instead. these are updated during training.
+at inference time, you don't have a batch -- so you use **running averages** of the mean and variance instead. these are updated during training.
 
 ## where do you put it?
 
@@ -124,7 +124,7 @@ it's now a default building block in architectures like ResNet, Inception, Effic
 
 this is where things get interesting.
 
-the **original motivation** was to reduce internal covariate shift — the paper even put it in the title. but later work showed that this might not be the full story.
+the **original motivation** was to reduce internal covariate shift -- the paper even put it in the title. but later work showed that this might not be the full story.
 
 batch norm seems to help mostly because it:
 
@@ -132,7 +132,7 @@ batch norm seems to help mostly because it:
 - keeps gradients in check
 - provides regularization (like dropout-lite)
 
-in practice, even if the "covariate shift" theory isn't perfect, the results speak for themselves — **batch norm speeds up training and improves performance**.
+in practice, even if the "covariate shift" theory isn't perfect, the results speak for themselves -- **batch norm speeds up training and improves performance**.
 
 ## impact
 
@@ -155,7 +155,7 @@ batch norm:
 - enables faster training and higher learning rates
 - is now a default layer in most modern architectures
 
-even if the original theory about covariate shift doesn't fully hold up — the technique absolutely does.`
+even if the original theory about covariate shift doesn't fully hold up -- the technique absolutely does.`
     },
     "attention-is-all-you-need": {
       title: "attention is all you need, explained",

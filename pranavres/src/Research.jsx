@@ -35,6 +35,10 @@ function Research() {
 
 it's 10:51am, i'm going to dedicate the next hour to studying for the midterm. going through the broader concepts first. seeing if i forgot anything.
 let's do it.
+
+(11:34pm) had a great day. i'll break it down:
+
+wrote an article about batch normalization. you can check it out [here](https://pranavpatnaik.com/essays/batch-normalization).
       `
     },
     "2025-06-22": {
