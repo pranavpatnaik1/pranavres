@@ -30,6 +30,24 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-24": {
+      content: `let's get to work.
+
+it's 10pm, i'm studying for my midterm on saturday. might be no post today, but i'll see what i can do. i'll study for the next 30-45minutes and see where i end up.
+i'm feeling extremely confident, but i'll have to try out some past midterms to see how i do.
+
+speaking of tests, i've got an aws exam to study for on the 5th of july. one day after the 4th, feeling pretty patriotic.
+
+![aws](https://i.postimg.cc/3rsd1qXd/image.png)
+
+i haven't started studying for it yet, but i'll get to it. it's for the AWS Certified AI Practitioner exam, so pretty exciting.
+worst case scenario, i'll push it forward but let's hope not.
+
+(10:34pm) i'm finished studying for the midterm for now, i'll get to work on a reel and then work on writing out a new article.
+      
+
+`
+    },  
     "2025-06-23": {
       content: `today's a study-for-midterm day.
 
