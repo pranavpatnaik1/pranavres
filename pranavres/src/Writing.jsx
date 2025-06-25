@@ -7,6 +7,131 @@ import ArticleComments from './components/ArticleComments';
 export default function Writing() {
   // Sample writing entries with titles, subtitles, and banner images
   const writingEntries = {
+    "resnet": {
+      title: "resnet",
+      subtitle: "building deeper networks without breaking everything",
+      banner: "https://i.postimg.cc/FHJ7whCm/image.png",
+      date: "2025-06-30",
+      content: `# resnet: building deeper networks without breaking everything
+
+in 2015, deep neural networks had a problem:  
+you'd try to stack more layers to make the model better... and it would actually get worse.
+
+not because of overfitting -- just straight-up worse **training error**.  
+as in: more layers = harder to optimize.
+
+the team at microsoft research (he et al.) proposed a fix in their paper:  
+**"Deep Residual Learning for Image Recognition"**  
+
+<div style="text-align: center;">
+
+[link to paper](https://arxiv.org/abs/1512.03385)
+
+</div>
+
+they called it **ResNet**. and it flipped the game.
+
+## the problem: degradation
+
+in theory, adding more layers should make a neural net more expressive.
+
+but in practice, going deeper made it **harder to train**. accuracy plateaued and sometimes even dropped.  
+this wasn't due to vanishing gradients (ReLU + batchnorm helped with that). it was deeper.
+
+> stacking more layers made optimization worse, not better.
+
+the authors called this the **degradation problem**.
+
+## the idea: residual connections
+
+if learning a full mapping \`H(x)\` is too hard... why not let the network learn just the **difference**?
+
+they rewrote the output as:
+
+<div style="text-align: center;">
+
+\`\`\`
+H(x) = F(x) + x
+\`\`\`
+
+</div>
+
+where:
+- \`x\` is the input
+- \`F(x)\` is the part the network learns (the residual)
+
+you're not learning the output directly -- you're learning **what to add to the input** to get the output.
+
+this is called a **residual block**.
+
+## what does a residual block look like?
+
+a basic one has this structure:
+
+1. input splits into two paths:
+   - main path: Conv to BN to ReLU to Conv to BN
+   - skip path: direct connection (shortcut)
+2. outputs from both paths are added together
+3. final ReLU activation
+
+that skip connection (aka shortcut) lets gradients flow straight through the block.
+
+if \`F(x) = 0\`, the block just passes input through untouched -- the model can always fall back to the identity mapping.
+
+this makes deeper networks **easier to optimize**.
+
+## building deeper nets
+
+using residual blocks, the team trained:
+
+- ResNet-18
+- ResNet-34
+- ResNet-50
+- ResNet-101
+- ResNet-152
+
+and got **state-of-the-art** results on ImageNet.  
+ResNet-152 had **>150 layers** and still improved performance.
+
+before ResNet, going beyond 20-30 layers was sketchy.  
+after ResNet -- 100+ layers was standard.
+
+## what made it work?
+
+- **skip connections** stabilized training
+- **identity mapping** meant layers could "opt out"
+- **deeper networks** could now generalize better without exploding
+- combined with **batch norm + ReLU**, it formed a solid blueprint
+
+the key isn't that deep nets *couldn't* work -- it's that they needed a way to flow gradients effectively through all those layers.
+
+## beyond ResNet
+
+ResNet was just the beginning.
+
+- **WideResNet**: fewer layers, more channels
+- **ResNeXt**: grouped convolutions for modularity
+- **EfficientNet**: uses ResNet-style blocks with better scaling rules
+- **Vision Transformers (ViT)**: even *they* borrow the idea of skip connections
+
+and beyond vision, skip connections are everywhere:
+
+- transformers (residuals + layer norm)
+- diffusion models
+- audio models
+- deep RL
+
+## tldr
+
+ResNet solved a simple but critical problem:  
+**deeper networks were underperforming because they were too hard to optimize.**
+
+the fix?  
+**skip connections** that let the model learn residuals instead of full transformations.
+
+it turned deep learning from "20 layers max" to "why not 200?"  
+and it's still one of the most influential architectures in modern ML.`
+    },
     "batch-normalization": {
       title: "batch normalization",
       subtitle: "accelerating deep network training by reducing internal covariate shift",

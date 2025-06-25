@@ -44,7 +44,18 @@ i haven't started studying for it yet, but i'll get to it. it's for the AWS Cert
 worst case scenario, i'll push it forward but let's hope not.
 
 (10:34pm) i'm finished studying for the midterm for now, i'll get to work on a reel and then work on writing out a new article.
-      
+
+(1:23am) posted the reel. it's doing well.
+
+![reel](https://i.postimg.cc/Gpt52wFq/image.png)
+
+will work on an article now. 
+
+i'm going to go ahead and get to bed now.
+
+<div style="text-align: center;">
+<b><u>[sleep: 1:24am]</u></b>
+</div>
 
 `
     },  
