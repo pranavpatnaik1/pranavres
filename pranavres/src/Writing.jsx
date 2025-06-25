@@ -11,16 +11,16 @@ export default function Writing() {
       title: "resnet",
       subtitle: "building deeper networks without breaking everything",
       banner: "https://i.postimg.cc/FHJ7whCm/image.png",
-      date: "2025-06-30",
+      date: "2025-06-25",
       content: `# resnet: building deeper networks without breaking everything
 
 in 2015, deep neural networks had a problem:  
-you'd try to stack more layers to make the model better... and it would actually get worse.
+you'd try to stack more layers to make the model better... and it'd actually get worse.
 
-not because of overfitting -- just straight-up worse **training error**.  
-as in: more layers = harder to optimize.
+not because of overfitting -- just worse **training error**.  
+as in, more layers = harder to optimize.
 
-the team at microsoft research (he et al.) proposed a fix in their paper:  
+the team at microsoft research (He et al.) proposed a fix in their paper:  
 **"Deep Residual Learning for Image Recognition"**  
 
 <div style="text-align: center;">
@@ -29,14 +29,14 @@ the team at microsoft research (he et al.) proposed a fix in their paper:
 
 </div>
 
-they called it **ResNet**. and it flipped the game.
+they called it **ResNet**, and it changed the game.
 
 ## the problem: degradation
 
 in theory, adding more layers should make a neural net more expressive.
 
 but in practice, going deeper made it **harder to train**. accuracy plateaued and sometimes even dropped.  
-this wasn't due to vanishing gradients (ReLU + batchnorm helped with that). it was deeper.
+this wasn't due to vanishing gradients (ReLU + batchnorm helped with that), it was deeper.
 
 > stacking more layers made optimization worse, not better.
 
@@ -44,7 +44,7 @@ the authors called this the **degradation problem**.
 
 ## the idea: residual connections
 
-if learning a full mapping \`H(x)\` is too hard... why not let the network learn just the **difference**?
+if learning a full mapping \`H(x)\` is too hard, why not let the network learn just the **difference**?
 
 they rewrote the output as:
 

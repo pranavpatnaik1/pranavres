@@ -51,6 +51,9 @@ worst case scenario, i'll push it forward but let's hope not.
 
 will work on an article now. 
 
+(1:40am) finished the article. you can check it out [here](https://pranavpatnaik.com/essays/resnet).
+it's on resnet, a pretty important model in computer vision.
+
 i'm going to go ahead and get to bed now.
 
 <div style="text-align: center;">
