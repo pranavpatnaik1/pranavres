@@ -30,6 +30,16 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-06-30": {
+      content: `happy monday.
+
+going to get to work on the AWS Certified AI Practitioner course now.
+currently studying the "Responsible AI" section.
+
+![aws](https://i.postimg.cc/sDVRKrBZ/image.png)
+  
+      `
+    },
     "2025-06-24": {
       content: `let's get to work.
 
