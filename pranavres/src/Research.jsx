@@ -30,6 +30,12 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-07-01": {
+      content: `happy canada day.
+
+i'm going to get to work on the must-know doc now.
+      `
+    },
     "2025-06-30": {
       content: `happy monday.
 
@@ -38,6 +44,11 @@ currently studying the "Responsible AI" section.
 
 ![aws](https://i.postimg.cc/sDVRKrBZ/image.png)
   
+---
+
+(7:34pm) now i'm going to get to work on inkwell.
+
+
       `
     },
     "2025-06-24": {
