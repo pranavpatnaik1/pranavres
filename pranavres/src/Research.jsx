@@ -30,10 +30,22 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
-    "2025-07-01": {
-      content: `happy canada day.
+    "2025-07-10": {
+      content: `good morning.
 
-i'm going to get to work on the must-know doc now.
+(3:06pm) i'm reviewing this paper: Fully Convolutional Networks for Semantic Segmentation.
+it's on the longer side, approx. 10 pages.
+
+![paper](https://i.postimg.cc/mgFqdr1f/image.png)
+
+here are my notes on it so far:
+
+![notes1](https://i.postimg.cc/MKRZBzZH/research-44.jpg)
+![notes2](https://i.postimg.cc/7Z86tftS/research-45.jpg)
+![notes3](https://i.postimg.cc/YC6S5MTZ/research-46.jpg)
+
+i'll be able to finish this by the end of today. then, i'll write a blog on it.
+
       `
     },
     "2025-06-30": {
