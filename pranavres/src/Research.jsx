@@ -30,6 +30,12 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-07-17": {
+      content: `spending the morning cold emailing professors.
+starting with profs @ uoft, then waterloo, all around ontario, then america & germany.
+let's get started.
+      `
+    },
     "2025-07-10": {
       content: `good morning.
 
