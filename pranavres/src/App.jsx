@@ -210,7 +210,7 @@ oh man
             </div>
             <div className="sidebar-links">
               <ul>
-                <li><NavLink to="/research" end>research</NavLink></li>
+                <li><NavLink to="/blog" end>blog</NavLink></li>
                 <li><NavLink to="/resume">resume</NavLink></li>
                 <li><NavLink to="/essays">essays</NavLink></li>
                 <li><NavLink to="/resources">resources</NavLink></li>
@@ -244,7 +244,7 @@ oh man
           </nav>
           <main className="content">
             <Routes>
-              <Route path="/research" element={<Research />} />
+              <Route path="/blog" element={<Research />} />
               <Route path="/" element={<Navigate to="/home" />} />
               <Route path="/home" element={<Home />} />
               <Route path="/resources" element={<Resources />} />
