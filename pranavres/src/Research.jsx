@@ -35,6 +35,7 @@ function Research() {
 
 (11:49am) Spent the morning visiting a tutorial that wasn't even in session. Admittedly, it was a bit of a waste of time, but it was a calm space to sit around and do some work.
 Now that I'm back in school, I'm gearing up on working on new things, applying to jobs, and generally being productive.
+
 For now, I'm exploring research opportunities and internships, whilst also attempting to finish school with a 4.0 GPA.
 I've got a few research papers to read and a few papers to write, so I'm hoping to get a lot of work done today.
       `
