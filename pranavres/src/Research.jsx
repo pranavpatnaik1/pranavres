@@ -30,6 +30,14 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-09-11": {
+      content: `Good morning.
+
+(11:49am) Spent the morning visiting a tutorial that wasn't even in session. Admittedly, it was a bit of a waste of time, but it was still a good piece of time to sit around and do some work.
+Especially since I've been slacking off on work for the past few days.
+
+      `
+    },
     "2025-07-17": {
       content: `spending the morning cold emailing professors.
 starting with profs @ uoft, then waterloo, all around ontario, then america & germany.
