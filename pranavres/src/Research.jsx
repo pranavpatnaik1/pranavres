@@ -30,6 +30,20 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2025-09-13": {
+      content: `Good morning.
+
+(6:50pm) I've got a CSC236 term test on Wednesday, so I've spent the day studying for it. I'm seriously in love with applying to jobs.
+It's a fascinating joy opening a job opening and seeing I'm the perfect fit.
+I had an over-the-phone interview with a company today and it went pretty well.
+They were asking some fairly straightforward questions about LLMs along with a few tricky ones, but I made my way through it and I'm happy with my performance.
+
+For now, I'm focusing on 236. I've found these lecture notes from Prof. David Liu that I'm mulling through. So far, pretty good.
+The term test's on the "Correctness of Itertive and Recursive Programs" section. I've got a few practice problems to do, so I'm hoping to get a lot of work done today.
+
+See you later.
+      `
+    },
     "2025-09-11": {
       content: `Good morning.
 
