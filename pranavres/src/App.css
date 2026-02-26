@@ -894,22 +894,25 @@ html body .sidebar::-webkit-scrollbar {
   }
 
   .selected-entry p {
-    width: calc(100% - 32px);
-    margin: 16px auto;
+    width: 100%;
+    margin: 16px 0;
+    padding: 0 16px 0 0;
     white-space: normal;
   }
 
   .selected-entry pre {
-    max-width: calc(100% - 32px);
-    margin: 16px auto;
+    max-width: 100%;
+    margin: 16px 0;
+    padding: 16px;
     white-space: pre-wrap;
     word-wrap: break-word;
+    box-sizing: border-box;
   }
 
   .selected-entry iframe {
-    width: calc(100% - 32px) !important;
+    width: 100% !important;
     height: 400px !important;
-    margin: 16px auto;
+    margin: 16px 0;
     box-sizing: border-box;
   }
 
@@ -964,7 +967,13 @@ html body .sidebar::-webkit-scrollbar {
     gap: 16px;  /* Slightly increase gap between cards */
   }
 
-  .selected-entry img,
+  .selected-entry img {
+    max-width: calc(100% - 32px);
+    margin: 16px auto;
+    display: block;
+    border-radius: 6px;  /* Slightly smaller radius on mobile */
+  }
+
   .blog-post img,
   .article-content img {
     max-width: calc(100% - 32px);  /* Add some padding on mobile */
@@ -972,7 +981,13 @@ html body .sidebar::-webkit-scrollbar {
     border-radius: 6px;  /* Slightly smaller radius on mobile */
   }
 
-  .selected-entry p,
+  .selected-entry p {
+    width: 100%;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+  }
+
   .blog-post p,
   .article-content p {
     width: 100%;
@@ -982,7 +997,11 @@ html body .sidebar::-webkit-scrollbar {
   }
 
   /* Ensure image containers don't overflow */
-  .selected-entry p:has(img),
+  .selected-entry p:has(img) {
+    padding: 0;
+    margin: 16px 0;
+  }
+
   .blog-post p:has(img),
   .article-content p:has(img) {
     padding: 0;  /* Remove padding for image containers */
@@ -1060,14 +1079,23 @@ html body .sidebar::-webkit-scrollbar {
     padding: 10px;
   }
 
-  .selected-entry img,
+  .selected-entry img {
+    max-width: calc(100% - 24px);
+    margin: 12px auto;
+    display: block;
+  }
+
   .blog-post img,
   .article-content img {
     max-width: calc(100% - 24px);  /* Slightly less padding on very small screens */
     margin: 12px auto;
   }
 
-  .selected-entry p,
+  .selected-entry p {
+    padding: 0 12px 0 0;
+    margin: 12px 0;
+  }
+
   .blog-post p,
   .article-content p {
     padding: 0 12px;
