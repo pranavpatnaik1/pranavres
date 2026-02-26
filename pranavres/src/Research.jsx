@@ -30,6 +30,59 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2026-02-26": {
+      content: `Good morning. Happy new year.
+
+(12:35pm) Starting the day right with Leetcode. I've been trying to be as consistent as possible lately, and it's been going great!
+Got an 8 Day streak on Neetcode, and a 5 Day streak on Leetcode. Got a linear algebra midterm tomorrow, so I'm focused on that as well.
+Pumped out a lot of Easy problems today on Two Pointers. I find it's always good to keep momentum going by instilling good intuition first.
+
+A lot of these problems are ones I've done in the past. As demoralizing as it can be to do them all over again, job's gotta be done.
+It's like building a house with tiny bricks. You gotta start somewhere.
+I'm glad that this spin around the problems are giving me a fresh perspective.
+The patterns are being ingrained in my mind, and I'm feeling more confident with my ability to solve them without reference.
+
+(12:43pm) Solved four problems:
+
+![leetcode](https://i.postimg.cc/qqF65bCX/image.png)
+
+I found all of them rather straightforward but refreshing, which is a good sign. I've never had fun doing leetcode before.
+
+- 160. Intersection of Two Linked Lists (Easy)
+
+![intersectionofthreelinkedlists](https://i.postimg.cc/sgLyZFCG/image.png)
+![soln](https://i.postimg.cc/HWtg981f/image.png)
+
+This was a pretty easy question: tracking "seen" nodes in a set.
+Surely there's a more optimal solution w/ O(1) space, but this was a good start. I don't mind having a bit of a semi-optimal solution.
+
+- 1404. Number of Steps to Reduce a Number in Binary Representation to One (Medium)
+
+![numberofsteps](https://i.postimg.cc/5yynzrVQ/image.png)
+![soln2](https://i.postimg.cc/x1D3j8cv/image.png)
+
+Again, I didn't mind having the optimal solution, but rather coding the strategy in my head. This was the daily problem, so I wanted to finish it ASAP.
+
+- 234. Palindrome Linked List (Easy)
+
+![palindromelinkedlist](https://i.postimg.cc/7Y7QnpzM/image.png)
+![soln3](https://i.postimg.cc/cCfMfGz0/image.png)
+
+Here, the key insight was to reverse the second half of the list and compare it to the first half by using a slow, fast pointer approach.
+As in: have two pointers, but move the "fast" pointer twice as fast as the "slow" pointer. When the "fast" pointer reaches the end, the "slow" pointer will be at the middle.
+Then, reverse the second half of the list @ "slow.next". Compare the two halves by iterating through them simultaneously.
+Easy!
+
+- 206. Reverse Linked List (Easy)
+
+![reverselinkedlist](https://i.postimg.cc/d0zy6Sr4/image.png)
+![soln4](https://i.postimg.cc/QMWBFkwZ/image.png)
+
+Did this for review.
+
+(12:58pm) Need to study now for tomorrow's midterm. Will get back to leetcode later.
+      `
+    },
     "2025-09-13": {
       content: `Good morning.
 
@@ -56,6 +109,7 @@ I've got a few research papers to read and a few papers to write, so I'm hoping 
     },
     "2025-07-17": {
       content: `spending the morning cold emailing professors.
+
 starting with profs @ uoft, then waterloo, all around ontario, then america & germany.
 let's get started.
       `
@@ -1599,7 +1653,9 @@ this marks, what, four days of doing nearly nothing? i must be going insane`
 
     },
     "2025-05-19": {
-      content: `woohoo! love it when we have three wacko days back-to-back-to-back. the only productive thing i did all day was record a bit on the train and do some yard work hahaha. i suppose the long weekend really took it out of me. 
+      content: `woohoo!
+
+love it when we have three wacko days back-to-back-to-back. the only productive thing i did all day was record a bit on the train and do some yard work hahaha. i suppose the long weekend really took it out of me. 
 
 got to call my girlfriend a ton today
 

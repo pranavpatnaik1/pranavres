@@ -68,6 +68,7 @@ nav ul li a:hover {
   transform: translateY(20px);
   animation: fadeUp 0.5s ease forwards;
   animation-delay: calc(0.1s * var(--post-index, 0));
+  cursor: pointer;
 }
 
 .blog-post:not(.active)::after {

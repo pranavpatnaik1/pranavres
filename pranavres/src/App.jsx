@@ -171,8 +171,8 @@ oh man
                                            .replace(/[#>*_`~\-]/g, '')      // remove markdown symbols
                                            .replace(/\[(.*?)\]\(.*?\)/g, '$1'); // remove links, keep text
             const previewText =
-              plainText.length > 100
-                ? plainText.slice(0, 100) + "..."
+              plainText.length > 60
+                ? plainText.slice(0, 60) + "..."
                 : plainText;
 
             return (
