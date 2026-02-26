@@ -33,7 +33,7 @@ function Research() {
     "2026-02-26": {
       content: `Good morning. Happy new year.
 
-(12:35pm) Starting the day right with Leetcode. I've been trying to be as consistent as possible lately, and it's been going great!
+(12:35pm) Starting the day right with Leetcode. I've been trying to be as consistent as possible lately, and it's been going great.
 Got an 8 Day streak on Neetcode, and a 5 Day streak on Leetcode. Got a linear algebra midterm tomorrow, so I'm focused on that as well.
 Pumped out a lot of Easy problems today on Two Pointers. I find it's always good to keep momentum going by instilling good intuition first.
 
