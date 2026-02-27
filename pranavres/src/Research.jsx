@@ -81,6 +81,14 @@ Easy!
 Did this for review.
 
 (12:58pm) Need to study now for tomorrow's midterm. Will get back to leetcode later.
+
+(3:46pm) Studying for my midterm, I've created a study doc that's been incredibly useful. Right now, I'm studying the properties of the inverse of a linear transformation.
+
+(5:05pm) Finished studying for my linear algebra midterm... thankfully it's concepts I've covered before in MAT223, the most "complex" concept being eigenvalues and eigenvectors. Been breezing through this checklist today.
+
+![studydoc](https://i.postimg.cc/sgL5PnVs/image.png)
+
+(10:37pm) With the midterm around the corner @ 5pm tomorrow, I'm going to do some past midterms. I glanced at them before and I'm feeling confident, but now I'm taking a more thorough look at them.
       `
     },
     "2025-09-13": {
