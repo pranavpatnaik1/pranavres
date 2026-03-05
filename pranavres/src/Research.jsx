@@ -30,6 +30,18 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2026-03-05": {
+      content: `lost my neetcode & leetcode streak. felt like i was on a roll, but i'm back to square one.
+it's a real setback, but i'm not going to let it get me down. i feel like most of the great intuition i gained from the first pass was really great, but it's slowly slipping away now.
+it's only right that i start completely from scratch again. i did the daily leetcode today: Minimum Changes To Make Alternating Binary String.
+
+![leetcode](https://i.postimg.cc/d1FPWWGg/image.png)
+
+pretty straightforward soln. now, i'm starting back again w neetcode. from the beginning! this might be seen as a waste of time, since i've already finished the problems rather thoroughly, but it's like starting a book again when you've lost your page. if you didn't know where you were in the book, you're probably better off starting from the beginning and understanding it better.
+the entire point of this process isn't to falsely build a "streak" but rather to truly understand the concepts and build a strong foundation.
+let's do it.
+      `
+    },
     "2026-02-26": {
       content: `Good morning. Happy new year.
 
@@ -89,7 +101,9 @@ Did this for review.
 ![studydoc](https://i.postimg.cc/sgL5PnVs/image.png)
 
 (10:37pm) With the midterm around the corner @ 5pm tomorrow, I'm going to do some past midterms. I glanced at them before and I'm feeling confident, but now I'm taking a more thorough look at them.
-      `
+      
+(1:35am) Doing these problems feels like Neetcode 150, as dumb as that sounds. I'm doing the most important problems, wasting 0 time. Maybe it's not as extensive, but I'm happy with my intuition and confident it'll take me to where I need to be tomorrow.
+`
     },
     "2025-09-13": {
       content: `Good morning.
