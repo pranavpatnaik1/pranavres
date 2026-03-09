@@ -30,6 +30,15 @@ function Research() {
 
   // Sample blog entries with dates as keys (Markdown supported)
   const blogEntries = {
+    "2026-03-08": {
+      content: `Good morning.
+I've got three midterms this week: CSC209, MAT224, and MAT235. CSC209's on Tuesday, so that's the first on the list to tackle.
+(4:53pm) Need to study weeks 5, 6, 7, 8 from PCRS. I'm using GPT to study & review everything in detail.
+
+![review](https://i.postimg.cc/G2cr79Pz/image.png)
+
+      `
+    },
     "2026-03-05": {
       content: `lost my neetcode & leetcode streak. felt like i was on a roll, but i'm back to square one.
 it's a real setback, but i'm not going to let it get me down. i feel like most of the great intuition i gained from the first pass was really great, but it's slowly slipping away now.
